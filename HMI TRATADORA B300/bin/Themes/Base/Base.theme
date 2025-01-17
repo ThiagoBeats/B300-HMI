@@ -1,0 +1,27 @@
+{
+  "controlTypeValues": {},
+  "controlClassValues": {
+    "AnimaMixer": {
+      "attributes": {
+        "BackgroundImageHeight": 100.0
+      },
+      "themedResources": {}
+    },
+    "AnimaPolvo": {
+      "attributes": {
+        "BackgroundImageHeight": 100.0,
+        "BackgroundImageHeightUnit": "%",
+        "BackgroundImageHorizontalAlignment": "Center",
+        "BackgroundImageVerticalAlignment": "Center"
+      },
+      "themedResources": {}
+    },
+    "AnimaPolvoCAL": {
+      "attributes": {
+        "BackgroundImageHeight": 100.0
+      },
+      "themedResources": {}
+    }
+  },
+  "$schema": "./../../../Packages/Beckhoff.TwinCAT.HMI.Framework.12.760.59/runtimes/native1.12-tchmi/Schema/ThemeDescription.Schema.json"
+}

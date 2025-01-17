@@ -1,0 +1,347 @@
+{
+    "recipeList": {
+        "BASF SOLUTION": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 4,
+                "PLC1.MAIN.iRecetaInyec01": 13,
+                "PLC1.MAIN.iRecetaInyec02": 14,
+                "PLC1.MAIN.iRecetaOrden01": 1,
+                "PLC1.MAIN.iRecetaOrden02": 1,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 33.0,
+                "PLC1.MAIN.rRecetaDosis02": 44.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        },
+        "COATING_01": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 4,
+                "PLC1.MAIN.iRecetaInyec01": 13,
+                "PLC1.MAIN.iRecetaInyec02": 14,
+                "PLC1.MAIN.iRecetaOrden01": 1,
+                "PLC1.MAIN.iRecetaOrden02": 1,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 33.0,
+                "PLC1.MAIN.rRecetaDosis02": 44.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        },
+        "COATING_02": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 0,
+                "PLC1.MAIN.iRecetaInyec01": 13,
+                "PLC1.MAIN.iRecetaInyec02": 0,
+                "PLC1.MAIN.iRecetaOrden01": 1,
+                "PLC1.MAIN.iRecetaOrden02": 0,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 33.0,
+                "PLC1.MAIN.rRecetaDosis02": 0.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        },
+        "NUEVA": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 3,
+                "PLC1.MAIN.iRecetaInyec01": 33,
+                "PLC1.MAIN.iRecetaInyec02": 33,
+                "PLC1.MAIN.iRecetaOrden01": 0,
+                "PLC1.MAIN.iRecetaOrden02": 1,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 700.0,
+                "PLC1.MAIN.rRecetaDosis02": 33.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        },
+        "RECETA": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 4,
+                "PLC1.MAIN.iRecetaInyec01": 13,
+                "PLC1.MAIN.iRecetaInyec02": 14,
+                "PLC1.MAIN.iRecetaOrden01": 1,
+                "PLC1.MAIN.iRecetaOrden02": 1,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 33.0,
+                "PLC1.MAIN.rRecetaDosis02": 44.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        },
+        "RECETA002": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 4,
+                "PLC1.MAIN.iRecetaInyec01": 33,
+                "PLC1.MAIN.iRecetaInyec02": 44,
+                "PLC1.MAIN.iRecetaOrden01": 1,
+                "PLC1.MAIN.iRecetaOrden02": 2,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 333.0,
+                "PLC1.MAIN.rRecetaDosis02": 444.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        },
+        "receta 555": {
+            "recipeTypeName": "RECETA_TIPO_01",
+            "values": {
+                "PLC1.MAIN.iRecetaDemora01": 3,
+                "PLC1.MAIN.iRecetaDemora02": 4,
+                "PLC1.MAIN.iRecetaInyec01": 33,
+                "PLC1.MAIN.iRecetaInyec02": 44,
+                "PLC1.MAIN.iRecetaOrden01": 1,
+                "PLC1.MAIN.iRecetaOrden02": 2,
+                "PLC1.MAIN.iRecetaTimeDescar": 7,
+                "PLC1.MAIN.iRecetaTimeHomog": 0,
+                "PLC1.MAIN.iRecetaVelAspersor": 100,
+                "PLC1.MAIN.iRecetaVelMixA1": 100,
+                "PLC1.MAIN.iRecetaVelMixA2": 100,
+                "PLC1.MAIN.iRecetaVelMixA3": 100,
+                "PLC1.MAIN.rRecetaDosis01": 700.0,
+                "PLC1.MAIN.rRecetaDosis02": 666.0,
+                "PLC1.MAIN.sRecetaCircuito01": "¨¨",
+                "PLC1.MAIN.sRecetaCircuito02": "¨¨"
+            }
+        }
+    },
+    "recipeTypeList": {
+        "RECETA_TIPO_01": {
+            "members": {
+                "PLC1.MAIN.iRecetaDemora01": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 9,
+                    "schema": {
+                        "maximum": 99,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaDemora01",
+                    "unit": "seg"
+                },
+                "PLC1.MAIN.iRecetaDemora02": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 14,
+                    "schema": {
+                        "maximum": 99,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaDemora02",
+                    "unit": "seg"
+                },
+                "PLC1.MAIN.iRecetaInyec01": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 10,
+                    "schema": {
+                        "maximum": 99,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaInyec01",
+                    "unit": "seg"
+                },
+                "PLC1.MAIN.iRecetaInyec02": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 15,
+                    "schema": {
+                        "maximum": 99,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaInyec02",
+                    "unit": "seg"
+                },
+                "PLC1.MAIN.iRecetaOrden01": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 6,
+                    "schema": {
+                        "maximum": 9,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaOrden01",
+                    "unit": ""
+                },
+                "PLC1.MAIN.iRecetaOrden02": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 11,
+                    "schema": {
+                        "maximum": 9,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaOrden02",
+                    "unit": ""
+                },
+                "PLC1.MAIN.iRecetaTimeDescar": {
+                    "defaultValue": 7,
+                    "enabled": true,
+                    "group": "",
+                    "order": 5,
+                    "schema": {
+                        "maximum": 99,
+                        "minimum": 5
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaTimeDescar",
+                    "unit": "seg"
+                },
+                "PLC1.MAIN.iRecetaTimeHomog": {
+                    "defaultValue": 0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 3,
+                    "schema": {
+                        "maximum": 99,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaTimeHomog",
+                    "unit": "seg"
+                },
+                "PLC1.MAIN.iRecetaVelAspersor": {
+                    "defaultValue": 100,
+                    "enabled": true,
+                    "group": "",
+                    "order": 0,
+                    "schema": {
+                        "maximum": 150,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaVelAspersor",
+                    "unit": "%"
+                },
+                "PLC1.MAIN.iRecetaVelMixA1": {
+                    "defaultValue": 100,
+                    "enabled": true,
+                    "group": "",
+                    "order": 1,
+                    "schema": {
+                        "maximum": 150,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaVelMixA1",
+                    "unit": "%"
+                },
+                "PLC1.MAIN.iRecetaVelMixA2": {
+                    "defaultValue": 100,
+                    "enabled": true,
+                    "group": "",
+                    "order": 2,
+                    "schema": {
+                        "maximum": 150,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaVelMixA2",
+                    "unit": "%"
+                },
+                "PLC1.MAIN.iRecetaVelMixA3": {
+                    "defaultValue": 100,
+                    "enabled": true,
+                    "group": "",
+                    "order": 4,
+                    "schema": {
+                        "maximum": 100,
+                        "minimum": 0
+                    },
+                    "symbol": "PLC1.MAIN.iRecetaVelMixA3",
+                    "unit": "%"
+                },
+                "PLC1.MAIN.rRecetaDosis01": {
+                    "defaultValue": 0.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 8,
+                    "schema": {
+                        "maximum": 9999.0,
+                        "minimum": 0.0
+                    },
+                    "symbol": "PLC1.MAIN.rRecetaDosis01",
+                    "unit": "ml"
+                },
+                "PLC1.MAIN.rRecetaDosis02": {
+                    "defaultValue": 0.0,
+                    "enabled": true,
+                    "group": "",
+                    "order": 13,
+                    "schema": {
+                        "maximum": 9999.0,
+                        "minimum": 0.0
+                    },
+                    "symbol": "PLC1.MAIN.rRecetaDosis02",
+                    "unit": "ml"
+                },
+                "PLC1.MAIN.sRecetaCircuito01": {
+                    "defaultValue": "¨¨",
+                    "enabled": true,
+                    "group": "",
+                    "order": 7,
+                    "schema": {},
+                    "symbol": "PLC1.MAIN.sRecetaCircuito01",
+                    "unit": ""
+                },
+                "PLC1.MAIN.sRecetaCircuito02": {
+                    "defaultValue": "¨¨",
+                    "enabled": true,
+                    "group": "",
+                    "order": 12,
+                    "schema": {},
+                    "symbol": "PLC1.MAIN.sRecetaCircuito02",
+                    "unit": ""
+                }
+            },
+            "options": {
+                "enabled": "None"
+            },
+            "recipeTypeNames": []
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "Teste": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Teste.usercontrol.json",
+      "id": "tchmi:project#/definitions/Teste",
+      "type": "object"
+    },
+    "AcionamentosLinhas": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\AcionamentosLinhas.usercontrol.json",
+      "id": "tchmi:project#/definitions/AcionamentosLinhas",
+      "type": "object"
+    },
+    "PLC1.ARRAY_1..30_OF-REAL": {
+      "items": {
+        "$ref": "tchmi:general#/definitions/REAL"
+      },
+      "type": "array",
+      "minItems": 30,
+      "maxItems": 30,
+      "title": "Historico30Dias",
+      "description": "Esse array é usado para a interface dos consumos dos IBCs e dos fluxometros",
+      "startOffset": 1
+    },
+    "TratadoraPerifericos": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\TratadoraPerifericos.usercontrol.json",
+      "id": "tchmi:project#/definitions/TratadoraPerifericos",
+      "type": "object"
+    },
+    "Array(0..12) OF BOOL": {
+      "items": {
+        "$ref": "tchmi:general#/definitions/BOOL"
+      },
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "title": "Array_12"
+    }
+  }
+}

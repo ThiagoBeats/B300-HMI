@@ -1,0 +1,131 @@
+{
+  "$schema": "../../../TcHmiSrv/schema/ExtensionSettings.Schema.json",
+  "guid": "139e2fb4-8f5b-4b09-902e-269b5bba25e4",
+  "version": "1.12.762.46",
+  "configVersion": "1.0.0.1",
+  "visibility": "AlwaysShow",
+  "policies": [
+    "StrictPropertyValidation"
+  ],
+  "symbols": {
+    "Clients.Register": {
+      "description": "Register call for the Speech Service and Clients. ReadValue will include own SocketId.",
+      "writeValue": {
+        "$ref": "#/definitions/SpeechClientEntry"
+      },
+      "readValue": {
+        "function": true
+      },
+      "sample": {
+        "description": "Register an additional Speech HMI Client.",
+        "value": {
+          "SpeechApiVersion": 1,
+          "RemoteSocketId": 0,
+          "SocketId": 0,
+          "RegisterDate": "2019-09-27T13:20:09.737Z",
+          "Version": "Example version string",
+          "AudioSink": true,
+          "AudioSource": true,
+          "CanOffer": true,
+          "CanAnswer": false,
+          "PotentialLocales": [
+            "de-DE",
+            "en"
+          ],
+          "State": "available"
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    },
+    "Clients.List": {
+      "description": "List all registered Speech Services and HMI Clients.",
+      "readValue": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/SpeechClientEntry"
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    },
+    "ClientConfigs.Register": {
+      "description": "Register call for the clientConfig of the current HMI state.",
+      "writeValue": {
+        "$ref": "#/definitions/SpeechClientConfigEntry"
+      },
+      "readValue": {
+        "function": true
+      },
+      "sample": {
+        "description": "Register a clientConfig of the current HMI state.",
+        "value": {
+          "SpeechApiVersion": 1,
+          "SocketId": 0,
+          "RemoteSocketId": 23,
+          "CurrentCommands": [
+            "newRegion42"
+          ],
+          "CurrentLocales": [
+            "de-DE"
+          ]
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    },
+    "ClientConfigs.List": {
+      "description": "List all clientConfigs of the current HMI states.",
+      "readValue": {
+        "type": "array",
+        "items": {
+          "$ref": "#/definitions/SpeechClientConfigEntry"
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    },
+    "Event.Raise": {
+      "description": "Raise an event.",
+      "writeValue": {
+        "$ref": "#/definitions/SpeechPayloadContainer"
+      },
+      "readValue": {
+        "function": true
+      },
+      "sample": {
+        "description": "Raise a test event.",
+        "value": {
+          "SpeechApiVersion": 1,
+          "SocketId": 58,
+          "RemoteSocketId": 58,
+          "Command": {
+            "DetectedCommand": "bla",
+            "Parameter": {
+              "test": true
+            }
+          }
+        }
+      },
+      "userGroups": [
+        "__SystemUsers"
+      ],
+      "hidden": false
+    }
+  },
+  "dotNetTargetFramework": "netcoreapp3.1",
+  "dotNetTargetFrameworkVersion": "v3.0",
+  "dotNetPlatformTarget": "AnyCPU",
+  "dotNetConfiguration": "Release",
+  "packageVersion": "13.8.205",
+  "productVersion": "1.12.762.46",
+  "signature": "aclZ1Z9UCzHOM7Mo6HBM25yQyAnMRpgJg/kq9/UkcJnbnnVKtPEO/WaEJoir9oagkeUfdBTmKHMUXoOOZYLiVVrniRl3x1mmw6nwhjxawkTrChLcIi5egvbHF/e6NNZ9JTo3zI1Pnq4SSRqBsuz0SUMcp61mtsonFo4YHMNimYyAbAmqoqwIdMJLF4RJV6zvg9MY6YlSg3KKGOQoVyUHEkMbqPH4sTyTaMzOxOisbXGJ2yhHBXWR7V3n60lsNYhpRFdK49EQ3yqG1Rpr7i37O5tZWdKml+bU6lWfiDLtxHLEb4ieFP2Ulf5+YRs2lsR8HFScQoxXbLhD0wdY+lIvCA=="
+}

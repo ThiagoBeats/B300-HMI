@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <RecentColors>[
+  {
+    "counter": 0,
+    "color": "#FF194B69"
+  },
+  {
+    "counter": 0,
+    "color": "#FF000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF04A401"
+  },
+  {
+    "counter": 0,
+    "color": "#FF13DCC8"
+  },
+  {
+    "counter": 0,
+    "color": "#32FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#05FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#64FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#0AFFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#01FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#28FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#00FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#14FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#C8FFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFFBF0F0"
+  },
+  {
+    "counter": 0,
+    "color": "#19000000"
+  },
+  {
+    "counter": 0,
+    "color": "#02000000"
+  },
+  {
+    "counter": 0,
+    "color": "#64000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF535151"
+  },
+  {
+    "counter": 0,
+    "color": "#FF393939"
+  },
+  {
+    "counter": 0,
+    "color": "#FF050505"
+  }
+]</RecentColors>
+    <TcHmiEditor_SelectBindingWindowDimension>429;232;958;672</TcHmiEditor_SelectBindingWindowDimension>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
+  547.0,
+  50.0,
+  180.0,
+  80.0,
+  180.0,
+  100.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>[
+  280.0,
+  300.0,
+  298.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolInternalTree>[
+  300.0,
+  300.0,
+  100.0,
+  50.0,
+  65.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolInternalTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_symbolLocalizedTree>[
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_symbolLocalizedTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_extensionLocalizationsTree>[
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_extensionLocalizationsTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlsTree>[
+  300.0,
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlsTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolActionTemplateParametersTree>[
+  200.0,
+  300.0,
+  100.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolActionTemplateParametersTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolUserControlParametersTree>[
+  200.0,
+  300.0,
+  200.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolUserControlParametersTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolHistorizedTree>[
+  200.0,
+  50.0,
+  180.0,
+  80.0,
+  80.0,
+  80.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolHistorizedTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipesTree>[
+  300.0,
+  150.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipesTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipeTypesTree>[
+  300.0,
+  180.0,
+  150.0,
+  70.0,
+  70.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_RecipeTypesTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>[
+  300.0,
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ControlTypeAttributesTree>
+    <TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>[
+  200.0,
+  300.0
+]</TcHmiEditor_SelectBindingWindowColumnWidths_m_ThemedResourceTree>
+    <TcHmiEditor_SplitAreaStates>{
+  "EditorSettings": [
+    {
+      "Path": "Desktop.view",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 1.0244131455399059
+    },
+    {
+      "Path": "PANTALLAS\\PRINCIPAL.content",
+      "DesignAreaSplitSize": "Splitted",
+      "CodeAreaSplitSize": "Splitted",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.9571577847439916
+    },
+    {
+      "Path": "PANTALLAS\\CONFIG\\CONFIG_100_MENU.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\POLVOS\\POLVOS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\ALARMAS\\ALARMAS.content",
+      "DesignAreaSplitSize": "Splitted",
+      "CodeAreaSplitSize": "Splitted",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.95735785953177244
+    },
+    {
+      "Path": "PANTALLAS\\RECETAS\\RECETA_ACTIVAV02.content",
+      "DesignAreaSplitSize": "Splitted",
+      "CodeAreaSplitSize": "Splitted",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.98511166253101723
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\CALIBRACION_LIQUIDOS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L01.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\BALANZA\\BALANZA.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS1.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LISTADO_LIQ.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\CONFIG\\CONFIG_DataHora.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 1.0067214339059
+    },
+    {
+      "Path": "PANTALLAS\\POLVOS\\CALIBRACION_POLVOS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\POLVOS\\POLVO MA_P2.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LAVAGEM\\LIQ_LAVADO_P03.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 1.2363013698630136
+    },
+    {
+      "Path": "PANTALLAS\\ALARMAS\\ALARMAS_TODOS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\POLVOS\\POLVO MA_P1.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQ_LAVADO_PA.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\MIXERS\\MIXERS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\PERIFERICOS\\PERIFERICOS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L09.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\BALANZA\\BALANZA_CALIBRA.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\CONFIG\\CONFIG_CONFIGURACOES GERAIS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\DADOS_CONSUMO\\DADOS_CONSUMO.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 1.0014430014430014
+    },
+    {
+      "Path": "UserControls\\AcionamentosLinhas.usercontrol",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 1.0428816466552315
+    },
+    {
+      "Path": "UserControls\\TratadoraPerifericos.usercontrol",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\DADOS_CONSUMO\\ACIONAMENTOS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "UserControls\\Teste.usercontrol",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L10.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    }
+  ]
+}</TcHmiEditor_SplitAreaStates>
+    <TcHmiEditor_PermissionsWindowDimension>26;26;1000;700</TcHmiEditor_PermissionsWindowDimension>
+  </PropertyGroup>
+</Project>

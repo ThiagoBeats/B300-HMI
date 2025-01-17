@@ -1,0 +1,7 @@
+{
+  "locale": "en",
+  "localizedText": {
+    "ERROR_INIT": "Initializing extension {0} failed. Additional information: {1}",
+    "ERROR_CALL_COMMAND": "Calling command '{0}' failed! Additional information: {1}"
+  }
+}

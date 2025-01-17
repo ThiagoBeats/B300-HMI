@@ -1,0 +1,135 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "definitions": {
+    "SpeechClientEntry": {
+      "properties": {
+        "SpeechApiVersion": {
+          "type": "integer"
+        },
+        "SocketId": {
+          "type": "integer",
+          "description": "Socket id of the client in the server."
+        },
+        "RemoteSocketId": {
+          "type": "integer",
+          "description": "Socket id of the remote client in the server. Unused in this command."
+        },
+        "RegisterDate": {
+          "$ref": "tchmi:general#/definitions/DateTime"
+        },
+        "AudioSource": {
+          "type": "boolean",
+          "description": "This client can provide an audio source."
+        },
+        "AudioSink": {
+          "type": "boolean",
+          "description": "This client can consume an audio stream."
+        },
+        "CanOffer": {
+          "type": "boolean",
+          "description": "This client can start an WebRTC call."
+        },
+        "CanAnswer": {
+          "type": "boolean",
+          "description": "This client can answer an WebRTC call."
+        },
+        "Version": {
+          "type": "string",
+          "description": "Version string of the client."
+        },
+        "PotentialLocales": {
+          "type": "array",
+          "description": "A list of all Locales the client can be set to.",
+          "items": {
+            "$ref": "tchmi:general#/definitions/Locale"
+          }
+        },
+        "State": {
+          "type": "string",
+          "enum": ["available", "busy", "offline"]
+        }
+      },
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SpeechApiVersion",
+        "RegisterDate",
+        "SocketId",
+        "RemoteSocketId",
+        "AudioSink",
+        "AudioSource",
+        "CanOffer",
+        "CanAnswer",
+        "Version",
+        "PotentialLocales",
+        "State"
+      ]
+    },
+    "SpeechClientConfigEntry": {
+      "description": "Has a list of client config in the current HMI state",
+      "properties": {
+        "SpeechApiVersion": {
+          "type": "integer"
+        },
+        "SocketId": {
+          "type": "integer",
+          "description": "Socket id of the peer starting the signaling connection."
+        },
+        "RemoteSocketId": {
+          "type": "integer",
+          "description": "Socket id of the remote client in the server."
+        },
+        "CurrentCommands": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "description": "Active command in the current HMI state"
+          }
+        },
+        "CurrentLocales": {
+          "type": "array",
+          "items": {
+            "allOf": [
+              {
+                "$ref": "tchmi:general#/definitions/Locale"
+              },
+              {
+                "description": "Current locales in the current HMI state"
+              }
+            ]
+          }
+        }
+      },
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "SocketId",
+        "RemoteSocketId",
+        "CurrentCommands",
+        "CurrentLocales"
+      ]
+    },
+    "SpeechPayloadContainer": {
+      "properties": {
+        "SpeechApiVersion": {
+          "type": "integer"
+        },
+        "SocketId": {
+          "type": "integer",
+          "description": "Socket id of the client in the server."
+        },
+        "RemoteSocketId": {
+          "type": "integer",
+          "description": "Socket id of the remote client in the server."
+        },
+        "Command": {
+          "type": "object"
+        }
+      },
+      "required": ["SpeechApiVersion", "SocketId", "RemoteSocketId", "Command"],
+      "additionalProperties": false,
+      "type": "object"
+    }
+  }
+}

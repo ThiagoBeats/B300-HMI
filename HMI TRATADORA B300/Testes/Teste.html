@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubo Interativo</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+    <script type="module">
+        import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.module.js';
+
+        // Criar a cena
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Criar a geometria e material do cubo
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ffff });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        // Posicionar a câmera
+        camera.position.z = 5;
+
+        let isDragging = false;
+        let previousMousePosition = { x: 0, y: 0 };
+
+        // Função de animação
+        function animate() {
+            renderer.render(scene, camera);
+            requestAnimationFrame(animate);
+        }
+
+        // Iniciar animação
+        animate();
+
+        // Eventos do mouse
+        window.addEventListener('mousedown', (event) => {
+            isDragging = true;
+            previousMousePosition = { x: event.clientX, y: event.clientY };
+        });
+
+        window.addEventListener('mousemove', (event) => {
+            if (isDragging) {
+                const deltaMove = {
+                    x: event.clientX - previousMousePosition.x,
+                    y: event.clientY - previousMousePosition.y
+                };
+
+                // Rotacionar o cubo em torno do eixo Y
+                cube.rotation.y += deltaMove.x * 0.01;
+
+                // Atualizar a posição anterior do mouse
+                previousMousePosition = {
+                    x: event.clientX,
+                    y: event.clientY
+                };
+            }
+        });
+
+        window.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+
+        window.addEventListener('mouseleave', () => {
+            isDragging = false;
+        });
+
+        // Eventos de toque
+        window.addEventListener('touchstart', (event) => {
+            isDragging = true;
+            previousMousePosition = { x: event.touches[0].clientX, y: event.touches[0].clientY };
+        });
+
+        window.addEventListener('touchmove', (event) => {
+            if (isDragging) {
+                const deltaMove = {
+                    x: event.touches[0].clientX - previousMousePosition.x,
+                    y: event.touches[0].clientY - previousMousePosition.y
+                };
+
+                // Rotacionar o cubo em torno do eixo Y
+                cube.rotation.y += deltaMove.x * 0.01;
+
+                // Atualizar a posição anterior do toque
+                previousMousePosition = {
+                    x: event.touches[0].clientX,
+                    y: event.touches[0].clientY
+                };
+            }
+        });
+
+        window.addEventListener('touchend', () => {
+            isDragging = false;
+        });
+
+        window.addEventListener('touchcancel', () => {
+            isDragging = false;
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

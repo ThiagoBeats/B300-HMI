@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Clean;Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <TcHmiDirectory>$(registry:HKEY_CURRENT_USER\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <TcHmiDirectory Condition="'$(TcHmiDirectory)'==''">$(registry:HKEY_LOCAL_MACHINE\Software\Wow6432Node\Beckhoff\TwinCAT3\3.1@InstallDir)\..\Functions\TE2000-HMI-Engineering</TcHmiDirectory>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">15.0</VisualStudioVersion>
+    <AvailablePlatforms>TwinCAT HMI</AvailablePlatforms>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <HmiTitle>B300S</HmiTitle>
+    <HmiVerboseLevel>2</HmiVerboseLevel>
+    <HmiVersion>1.0.0.0</HmiVersion>
+    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
+    <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
+    <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
+    <HmiServerVersion>Latest</HmiServerVersion>
+    <HmiUseX64>True</HmiUseX64>
+    <HmiDefaultLanguage>client</HmiDefaultLanguage>
+    <TargetFrameworkMoniker>native,Version=v1.12.0,Profile=tchmi</TargetFrameworkMoniker>
+    <TargetFramework>native1.12-tchmi</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+    <HmiViewportInitialScale>1.0</HmiViewportInitialScale>
+    <HmiViewportMinimumScale />
+    <HmiViewportMaximumScale />
+    <HmiViewportUserScaleable>Default</HmiViewportUserScaleable>
+    <HmiPostProcessing>True</HmiPostProcessing>
+    <Name>HMI TRATADORA B300</Name>
+    <HmiCommunicationRouterPort>10122</HmiCommunicationRouterPort>
+    <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
+    <HmiInitial>1.12.760.59</HmiInitial>
+    <HmiRecent>1.12.762.46</HmiRecent>
+    <HmiServerNodeAdvancedView>False</HmiServerNodeAdvancedView>
+    <HmiTmcFiles>[
+  {
+    "FileName": "Coating_350_2 Instance.tmc",
+    "RootNamespace": "PLC_HUGO",
+    "IsFromSolution": false
+  }
+]</HmiTmcFiles>
+    <HmiTimeFormatLocale>pt-BR</HmiTimeFormatLocale>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
+    <TwinCATHmi_Targets>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.targets</TwinCATHmi_Targets>
+  </PropertyGroup>
+  <Import Project="$(TwinCATHmi_Tasks)" />
+  <Import Project="$(TwinCATHmi_Targets)" />
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>fcb43484-f745-4ec3-a6e7-00389bb2a523</ProjectGuid>
+    <RootNamespace>TwinCAT3HmiProject</RootNamespace>
+    <AssemblyName>TwinCAT3HmiProject</AssemblyName>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">TwinCAT HMI</Platform>
+  </PropertyGroup>
+  <!-- Any CPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|TwinCAT HMI' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>TwinCAT HMI</PlatformTarget>
+    <DefaultNamespace>HMI_TRATADORA_B300</DefaultNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|TwinCAT HMI' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>TwinCAT HMI</PlatformTarget>
+    <DefaultNamespace>HMI_TRATADORA_B300</DefaultNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" Condition="'$(RestoreProjectStyle)' == 'PackageReference'" />
+  <PropertyGroup>
+    <PreBuildEventDependsOn />
+  </PropertyGroup>
+  <Target Name="PreBuildEvent" Condition="'$(PreBuildEvent)'!=''" DependsOnTargets="$(PreBuildEventDependsOn)">
+    <Exec WorkingDirectory="$(OutDir)" Command="$(PreBuildEvent)" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEventDependsOn />
+  </PropertyGroup>
+  <Target Name="PostBuildEvent" Condition="'$(PostBuildEvent)' != '' and ('$(RunPostBuildEvent)'=='Always' or '$(RunPostBuildEvent)'=='OnOutputUpdated')" DependsOnTargets="$(PostBuildEventDependsOn)">
+    <Exec WorkingDirectory="$(OutDir)" Command="$(PostBuildEvent)" />
+  </Target>
+  <Target Name="GetFrameworkPaths" />
+  <PropertyGroup>
+    <BuiltProjectOutputGroupDependsOn>
+			PreBuildEvent;
+			CoreBuild;
+			PostBuildEvent
+		</BuiltProjectOutputGroupDependsOn>
+    <CleanDependsOn>
+			BaseClean
+		</CleanDependsOn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TcHmi_ProjectDirectory Condition="'$(TcHmi_ProjectDirectory)' == ''">$(MSBuildProjectDirectory)</TcHmi_ProjectDirectory>
+    <TcHmi_ServerAddress Condition="'$(TcHmi_ServerAddress)' == ''">127.0.0.1</TcHmi_ServerAddress>
+    <TcHmi_ServerPort Condition="'$(TcHmi_ServerPort)' == ''">1010</TcHmi_ServerPort>
+  </PropertyGroup>
+  <Target Name="CoreBuild">
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Clean" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" />
+    <TcHmiMSBuild.Publish.TcHmiBuild TaskAction="Build" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" ProjectFiles="@(Content)" VirtualMappings="$(TcHmi_VirtualMappings)" PostProcessing="$(HmiPostProcessing)" />
+    <TcHmiMSBuild.Publish.TcHmiGenerator TaskAction="EntryPage" ProjectDirectory="$(TcHmi_ProjectDirectory)" OutputPath="$(OutputPath)" TcHmiServerAddress="$(TcHmi_ServerAddress)" TcHmiServerPort="$(TcHmi_ServerPort)">
+      <Output TaskParameter="Result" PropertyName="TaskResult0" />
+    </TcHmiMSBuild.Publish.TcHmiGenerator>
+    <Message Text="Generating the Default.html within OutputPath('$(OutputPath)'): $(TaskResult0)" />
+  </Target>
+  <Target Name="Build" DependsOnTargets="$(BuiltProjectOutputGroupDependsOn)" />
+  <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
+  <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
+  <ItemGroup>
+    <Content Include="Testes\Garuda and Vishnu.stl">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Testes\Teste.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\imgteste.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\lsbgmaq.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\TratadoraPerifericos.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\TratadoraPerifericos.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\TratadoraPerifericos.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\AcionamentosLinhas.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\AcionamentosLinhas.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\AcionamentosLinhas.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\Teste.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Teste.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Teste.usercontrol</DependentUpon>
+    </Content>
+    <Folder Include="Fonts\" />
+    <Folder Include="Images" />
+    <Folder Include="Images\Manifest" />
+    <Folder Include="Images\LIQUIDOS" />
+    <Folder Include="Images\MIXERS" />
+    <Folder Include="Images\BALANZA" />
+    <Folder Include="Images\GENERAL" />
+    <Folder Include="Images\CLP_CARDS" />
+    <Folder Include="Images\PERIFERICOS" />
+    <Folder Include="Images\POLVOS" />
+    <Folder Include="Images\POLVOS\CALIBRACION" />
+    <Folder Include="Images\POLVOS\INYECCION" />
+    <Folder Include="Images\PRINCIPAL" />
+    <Folder Include="Images\PRINCIPAL\HABILITADOS" />
+    <Folder Include="Images\PRINCIPAL\FONDO PARADA" />
+    <Folder Include="Images\PRINCIPAL\FONDO MARCHA" />
+    <Folder Include="Images\PRINCIPAL\FONDO ALARMA" />
+    <Folder Include="Images\PRINCIPAL\SELECCIONADOS" />
+    <Folder Include="Imports" />
+    <Folder Include="Imports\Images" />
+    <Folder Include="Imports\Videos" />
+    <Folder Include="KeyboardLayouts\" />
+    <Folder Include="Localization" />
+    <Folder Include="Testes" />
+    <Folder Include="UserControls" />
+    <Folder Include="PANTALLAS\CLP_CARDS" />
+    <Folder Include="PANTALLAS\DADOS_CONSUMO" />
+    <Folder Include="Scripts JS" />
+    <Folder Include="PANTALLAS" />
+    <Folder Include="PANTALLAS\CONFIG" />
+    <Folder Include="PANTALLAS\LIQUIDOS1" />
+    <Folder Include="PANTALLAS\BALANZA" />
+    <Folder Include="PANTALLAS\LIQUIDOS1\LAVAGEM" />
+    <Folder Include="PANTALLAS\MIXERS" />
+    <Folder Include="PANTALLAS\ALARMAS" />
+    <Folder Include="PANTALLAS\PERIFERICOS" />
+    <Folder Include="PANTALLAS\RECETAS" />
+    <Folder Include="PANTALLAS\POLVOS" />
+    <Folder Include="Server\TcHmiEcDiagnostics" />
+    <Folder Include="Server\TcHmiEventLogger" />
+    <Folder Include="Server\TcHmiRecipeManagement" />
+    <Folder Include="Server\TcHmiScope" />
+    <Folder Include="Server\TcHmiSpeech" />
+    <Folder Include="Themes" />
+    <Folder Include="Themes\Base-Dark\Images\" />
+    <Folder Include="Themes\Base\" />
+    <Folder Include="Themes\Base-Dark\" />
+    <Folder Include="Server">
+      <WorkingDirectory>HMI TRATADORA B300</WorkingDirectory>
+    </Folder>
+    <Folder Include="Properties" />
+    <Content Include=".eslintrc.json">
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Images\BALANZA\BALANZA BASE 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\BALANZA\BALANZA BASE 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\BALANZA\BALANZA BASE 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\ek1100__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\ek1122__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\el1809__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\el2809__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\el2911__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\el6070__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\el6224__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\CLP_CARDS\el6751__certo-Photoroom.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\definicoes.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\GENERAL\BOTON VELOCIDAD AZUL.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\GENERAL\BOTON VELOCIDAD GRIS.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-livro-26.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\reset.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-calendário-94.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-erro-64.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-habilidade-linguística-24.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-habilidade-linguística-48.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-hora-extra-26 %282%29.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\icons8-idioma-94.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\LIQUIDOS FONDO CENTRO.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\LIQUIDOS FONDO DER.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\LIQUIDOS FONDO IZQ.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\PANTALLA LIQUIDOS 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\PANTALLA LIQUIDOS.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\PROBETA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\VALVULA 2V FALLA - Copy.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\VALVULA 2V H1-1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\VALVULA 2V H2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\VALVULA 3V FALLA - Copy.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\VALVULA 3V H1-1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\LIQUIDOS\VALVULA 3V H2-1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER A abierto.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER A cerrado.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER A MEDIO.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER A.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER TAPA ABIERTA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER TAPA OK.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\MIXER.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\PLATO 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\PLATO 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\PLATO 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\MIXERS\PLATO 4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS ALL.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS CAIXAS.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS T-30-TN TRANSPA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS T-30-TN.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS TRATADORA 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS TRATADORA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS TRBB TRANSPA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PERIFERICOS\PERIFERICOS TRBB.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\B300 FRENTE SIMPLEpng.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\B300 SIMPLE P1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\B300 SIMPLE P2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\B300 SIMPLE P3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\B300 SIMPLE P4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\CALIBRACION\POLVO CALIBRA 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\CALIBRACION\POLVO CALIBRA 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\CALIBRACION\POLVO CALIBRA 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\CALIBRACION\POLVO CALIBRA 4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\CALIBRACION\POLVO CALIBRA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\INYECCION\POLVO INYECTA 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\INYECCION\POLVO INYECTA 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\INYECCION\POLVO INYECTA 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\INYECCION\POLVO INYECTA 4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\INYECCION\POLVO INYECTA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\POLVO FONDO.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\POLVOS\POLVO MEDIO.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\B300-FONDO.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\BOTON CONFIG.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\ENCABEZADO FRANJA.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\ENCABEZADO LOGO.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L01.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L02.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L03.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L04.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L05.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L06.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L07.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L08.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L09.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L14.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L15.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA L16.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA P1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA P2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA P3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO ALARMA\FONDO ALARMA P4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L01.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L02.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L03.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L04.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L05.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L06.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L07.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L08.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L09.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L14.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L15.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA L16.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA P1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA P2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA P3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO MARCHA\FONDO MARCHA P4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L01.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L02.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L03.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L04.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L05.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L06.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L07.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L08.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L09.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L14.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L15.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA L16.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA P1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA P2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA P3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\FONDO PARADA\FONDO PARADA P4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L01.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L02.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L03.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L04.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L05.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L06.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L07.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L08.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L09.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L14.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L15.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO L16.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO P1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO P2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO P3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\HABILITADOS\HABILITADO P4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\MARLO DE FONDO ESP.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\MARLO DE FONDO PT.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L01.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L02.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L03.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L04.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L05.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L06.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L07.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L08.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L09.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L10.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L11.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L12.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L13.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L14.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L15.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO L16.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO P1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO P2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO P3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\PRINCIPAL\SELECCIONADOS\SELECCIONADO P4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\seta-direita.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\seta-para-baixo.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_down_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_left_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_push-button_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_right_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_rotation-left_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_rotation-left_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_rotation-right_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_rotation-right_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\icons_time-program_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\minus_minus_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\scales-normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\screen_right_active.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\Images\screen_right_normal.svg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Imports\mpeg-noise-92527.mpeg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="KeyboardLayouts\Spanish - with NumPad.keyboard.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\ESPAÑOL.localization">
+      <SubType>Content</SubType>
+      <DependentUpon>Localization\ESPAÑOL.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="Localization\ESPAÑOL.tpl.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Localization\PORTUGUES.localization">
+      <SubType>Content</SubType>
+      <DependentUpon>Localization\PORTUGUES.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="Localization\PORTUGUES.tpl.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\ALARMAS\ALARMAS_TODOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\ALARMAS\ALARMAS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\BALANZA\BALANZA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\BALANZA\BALANZA_CALIBRA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\BALANZA\NomeReceita.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>PANTALLAS\BALANZA\NomeReceita.js</DependentUpon>
+    </Content>
+    <Content Include="PANTALLAS\BALANZA\NomeReceita.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CLP_CARDS\CONFIG_142_CLP_CARTAO_EL1809.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CLP_CARDS\CONFIG_142_CLP_CARDS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_100_USUARIOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_CONFIGURACOES GERAIS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_DataHora.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_140_FABRICA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_141_BALANZA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_141_LIQUIDOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_100_MENU.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_141_PERIFERICOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\CONFIG\CONFIG_141_POLVOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\DADOS_CONSUMO\ACIONAMENTOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\DADOS_CONSUMO\DADOS_CONSUMO.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\CALIBRACION_LIQUIDOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\CALIBRACION_LIQ_PB.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\CALIBRACION_LIQ_PC.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LAVAGEM\LIQ_LAVADO_P02.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LAVAGEM\LIQ_LAVADO_P03.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LAVAGEM\LIQ_LAVADO_P01.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L06.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L01.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L02.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L03.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L04.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L05.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L07.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L08.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L09.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L10.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L11.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQUIDOS_L12.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQ_CAL_PESAJE_PA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQ_CAL_PESAJE_PB.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQ_CAL_PESAJE_PC.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQ_LAVADO_PA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LIQ_LAVADO_PB.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LIQUIDOS1\LISTADO_LIQ.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\LoginPage2.html">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\MIXERS\MIXERS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\PERIFERICOS\PERIFERICOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\CALIBRACION_POLVOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\CALIBRACION_POLVO_2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\LISTADO_POL.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\POLVO MA_P1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\POLVO MA_P2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\POLVOS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\POL_CalPesaje_MA_P1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\POLVOS\POL_CalPesaje_MA_P2.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\PRINCIPAL.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\RECETAS\RECETAS.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\RECETAS\RECETAS1.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\RECETAS\RECETA_ACTIVAV02.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="PANTALLAS\RECETAS\RECETA_ACTIVA.content">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\Alert2.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\Alert2.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\Alert2.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\Calendario.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\Calendario.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\Calendario.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\CarregaReceita.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\CarregaReceita.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\CarregaReceita.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\CodeBehindJs1.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\DataFormatada.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\DataFormatada.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\DataFormatada.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\DintToDate.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\DintToDate.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\DintToDate.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\PopupConfCancel.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\PopupConfCancel.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\PopupConfCancel.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts JS\SalvarReceita.function.json">
+      <SubType>Content</SubType>
+      <DependentUpon>Scripts JS\SalvarReceita.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts JS\SalvarReceita.js">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.remote.json" />
+    <Content Include="Server\TcHmiEcDiagnostics\TcHmiEcDiagnostics.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEcDiagnostics\TcHmiEcDiagnostics.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEcDiagnostics\TcHmiEcDiagnostics.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEcDiagnostics\TcHmiEcDiagnostics.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiEventLogger\TcHmiEventLogger.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.local.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiRecipeManagement\TcHmiRecipeManagement.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiScope\TcHmiScope.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSpeech\TcHmiSpeech.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSpeech\TcHmiSpeech.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSpeech\TcHmiSpeech.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSpeech\TcHmiSpeech.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.local.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.local.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.local.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>True</Visible>
+    </Content>
+    <Content Include="Themes\Base\AnimaMixerCSS.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\AnimaPolvo.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\AnimaPolvoCalCSS.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\CssBehind1.css">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\PLATO 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\PLATO 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\PLATO 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\PLATO 4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO CALIBRA 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO CALIBRA 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO CALIBRA 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO CALIBRA 4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO INYECTA 1.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO INYECTA 2.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO INYECTA 3.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Themes\Base\Images\POLVO INYECTA 4.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="tsconfig.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="tsconfig.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>tsconfig.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="packages.config">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="packages.xsd">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Properties\tchmiconfig.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.framework.Schema.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.framework.Schema.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.framework.Schema.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="Properties\tchmi.project.Schema.tpl.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmi.project.Schema.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+      <DependentUpon>Properties\tchmi.project.Schema.tpl.json</DependentUpon>
+    </Content>
+    <Content Include="Properties\tchmipublish.config.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\tchmimanifest.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Properties\Default.tpl">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include=".tfignore">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include=".gitignore">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Fonts\Fonts.css">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Fonts\Roboto-Condensed-webfont.woff">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Base.theme">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\BaseStyle.css">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base\Images\Background.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-Dark.theme">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Base-DarkStyle.css">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-320x534.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-420x200.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Splash-800x600.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Themes\Base-Dark\Images\Background.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="KeyboardLayouts\US - compact.keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="KeyboardLayouts\Numpad (plusminus).keyboard.json">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Images\Manifest\launcher-icon-2x.png">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Content Include="Desktop.view">
+      <SubType>Content</SubType>
+      <Visible>true</Visible>
+    </Content>
+    <Folder Include="Server\ADS\" />
+    <Folder Include="Server\TcHmiLua\" />
+    <Folder Include="Server\TcHmiSqliteLogger\" />
+    <Folder Include="Server\TcHmiSrv\" />
+    <Folder Include="Server\TcHmiUserManagement\" />
+    <Content Include="Server\ADS\ADS.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiLua\TcHmiLua.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSqliteLogger\TcHmiSqliteLogger.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Config.remote.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiSrv\TcHmiSrv.Storage.json">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.default.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Config.remote.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Content Include="Server\TcHmiUserManagement\TcHmiUserManagement.Storage.json">
+      <SubType>Content</SubType>
+      <Visible>false</Visible>
+    </Content>
+    <Folder Include="Themes\Base\Images\" />
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets'))" />
+  </Target>
+  <Import Project="..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets" Condition="Exists('..\packages\Microsoft.TypeScript.MSBuild.4.9.5\build\Microsoft.TypeScript.MSBuild.targets')" />
+</Project>
