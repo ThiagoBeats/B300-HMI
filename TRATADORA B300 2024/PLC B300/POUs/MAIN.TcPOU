@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <POU Name="MAIN" Id="{821c4236-c615-4bff-85e4-68c2e19ac33f}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	bSelecRecetaL01:BOOL;
+	bSelecRecetaL02:BOOL;
+	bSelecRecetaL03:BOOL;
+	bSelecRecetaL04:BOOL;
+	bSelecRecetaL05:BOOL;
+	bSelecRecetaL06:BOOL;
+	bSelecRecetaL07:BOOL;
+	bSelecRecetaL08:BOOL;
+	bSelecRecetaL09:BOOL;
+	bSelecRecetaL10:BOOL;
+	bSelecRecetaL11:BOOL;
+	bSelecRecetaL12:BOOL;
+	bSelecRecetaL13:BOOL;
+	bSelecRecetaL14:BOOL;
+	bSelecRecetaL15:BOOL;
+	bSelecRecetaL16:BOOL;
+	bSelecRecetaP1:BOOL;
+	bSelecRecetaP2:BOOL;
+	bSelecRecetaP3:BOOL;
+	bSelecRecetaP4:BOOL;
+	iEstadoL01:INT;
+	iEstadoL02:INT;
+	iEstadoL03:INT;
+	iEstadoL04:INT;
+	iEstadoL05:INT;
+	iEstadoL06:INT;
+	iEstadoL07:INT;
+	iEstadoL08:INT;
+	iEstadoL09:INT;
+	iEstadoL10:INT;
+	iEstadoL11:INT;
+	iEstadoL12:INT;
+	iEstadoL13:INT;
+	iEstadoL14:INT;
+	iEstadoL15:INT;
+	iEstadoL16:INT;
+	iEstadoP1:INT;
+	iEstadoP2:INT;
+	iEstadoP3:INT;
+	iEstadoP4:INT;
+	iRecetaVelMixA1:INT;
+	iRecetaVelMixA2:INT;
+	iRecetaVelMixA3:INT;
+	iRecetaVelAspersor:INT;
+	iRecetaTimeHomog:INT;
+	iRecetaTimeDescar:INT;
+	iRecetaOrden01:INT;
+	sRecetaCircuito01:STRING;
+	rRecetaDosis01:REAL;
+	iRecetaDemora01:INT;
+	iRecetaInyec01:INT;
+	iRecetaOrden02:INT;
+	sRecetaCircuito02:STRING;
+	rRecetaDosis02:REAL;
+	iRecetaDemora02:INT;
+	iRecetaInyec02:INT;
+	iRecetaOrden03:INT;
+	sRecetaCircuito03:STRING;
+	rRecetaDosis03:REAL;
+	iRecetaDemora03:INT;
+	iRecetaInyec03:INT;
+	iRecetaOrden04:INT;
+	sRecetaCircuito04:STRING;
+	rRecetaDosis04:REAL;
+	iRecetaDemora04:INT;
+	iRecetaInyec04:INT;
+	TablaLiquidos:ARRAY[1..64] OF stListado_LIQUIDOS;
+END_VAR
+
+
+
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="2" Count="0" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

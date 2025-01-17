@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.12">
+  <DUT Name="stListado_LIQUIDOS" Id="{abd896f8-77a6-49bf-a2cb-2a14864d60f2}">
+    <Declaration><![CDATA[TYPE stListado_LIQUIDOS :
+STRUCT
+	sProducto:STRING;
+	rDensidad:REAL;//g/ml
+	iVelAspersor:INT;//velocidad en porcentaje
+	bAgitador:BOOL;
+	b1000S:BOOL;
+	iTempMin:INT;
+	iTempMax:INT;
+END_STRUCT
+END_TYPE
+
+
+
+
+
+]]></Declaration>
+  </DUT>
+</TcPlcObject>
