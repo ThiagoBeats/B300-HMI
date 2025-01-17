@@ -26056,6 +26056,26 @@
             "SUBSYMBOL_MAPPING": "",
             "USEMAPPING": true
         },
+        "PLC1.Seguridad.TampaHomogAberta": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Seguridad::TampaHomogAberta",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        },
+                        "comment": "Tampa do homogeneizador aberta"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Testes.EmTeste": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -34333,6 +34353,7 @@
                 "PLC1.Salidas.TR_S_WT1_wControl": 3,
                 "PLC1.Salidas.bTR_S_VE1": 3,
                 "PLC1.Seguridad.PB_Emergencia": 3,
+                "PLC1.Seguridad.TampaHomogAberta": 3,
                 "PLC1.Testes.EmTeste": 3,
                 "PLC1.Testes.LinhaSelecionada": 3,
                 "PLC1.Testes.Teste2": 3,

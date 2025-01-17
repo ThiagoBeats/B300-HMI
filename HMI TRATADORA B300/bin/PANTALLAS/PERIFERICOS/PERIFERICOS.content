@@ -5103,7 +5103,7 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
@@ -5199,7 +5199,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Images/seta-para-baixo.png"
+                  "value": "Imports/Images/icons_down_active.svg"
                 },
                 "asyncWait": true
               }
@@ -5514,7 +5514,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Images/seta-para-baixo.png"
+                  "value": "Imports/Images/icons_down_active.svg"
                 },
                 "asyncWait": true
               }
@@ -5829,7 +5829,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Images/seta-para-baixo.png"
+                  "value": "Imports/Images/icons_down_active.svg"
                 },
                 "asyncWait": true
               }

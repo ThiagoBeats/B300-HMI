@@ -1661,151 +1661,140 @@
             ]
           },
           {
-            "else": [
+            "elseif": [
               {
-                "objectType": "Condition",
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.Entradas.TR_S_PDI%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
                 "active": true,
-                "parts": [
-                  {
-                    "if": [
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 0.0,
+                    "stopPoints": [
                       {
-                        "compare1": {
-                          "objectType": "Symbol",
-                          "valueType": "tchmi:general#/definitions/BOOL",
-                          "symbolExpression": "%s%PLC1.Entradas.TR_S_PDI%/s%"
-                        },
-                        "compare2": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:general#/definitions/BOOL",
-                          "value": false
-                        },
-                        "compareOperator": "==",
-                        "logic": null
-                      }
-                    ],
-                    "then": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiTextblock_4::BackgroundColor%/ctrl%",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Color",
-                          "value": {
-                            "angle": 0.0,
-                            "stopPoints": [
-                              {
-                                "color": "rgba(98, 19, 19, 1)",
-                                "stop": "0%"
-                              },
-                              {
-                                "color": "rgba(255, 13, 13, 1)",
-                                "stop": "64.93%"
-                              },
-                              {
-                                "color": "rgba(153, 32, 32, 0)",
-                                "stop": "100%"
-                              }
-                            ]
-                          }
-                        },
-                        "asyncWait": true
+                        "color": "rgba(98, 19, 19, 1)",
+                        "stop": "0%"
                       },
                       {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiTextblock_4::Text%/ctrl%",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:general#/definitions/String",
-                          "value": "BAIXA PRESSÃO NO SISTEMA PNEUMÁTICO"
-                        },
-                        "asyncWait": true
+                        "color": "rgba(255, 13, 13, 1)",
+                        "stop": "64.93%"
                       },
                       {
-                        "objectType": "Function",
-                        "active": true,
-                        "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
-                        "fnParams": [
-                          {
-                            "objectType": "StaticValue",
-                            "valueType": "tchmi:general#/definitions/String",
-                            "value": "BAIXA PRESSÃO NO SISTEMA PNEUMÁTICO"
-                          }
-                        ],
-                        "asyncWait": true
-                      },
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiTextblock_4::TextColor%/ctrl%",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/SolidColor",
-                          "value": {
-                            "color": "rgba(255, 255, 255, 1)"
-                          }
-                        },
-                        "asyncWait": true
-                      }
-                    ]
-                  },
-                  {
-                    "else": [
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiTextblock_4::BackgroundColor%/ctrl%",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/Color",
-                          "value": {
-                            "angle": 0.0,
-                            "stopPoints": [
-                              {
-                                "color": "rgba(0, 0, 0, 1)",
-                                "stop": "0%"
-                              },
-                              {
-                                "color": "rgba(0, 0, 0, 1)",
-                                "stop": "60%"
-                              },
-                              {
-                                "color": "rgba(25, 75, 105, 1)",
-                                "stop": "100%"
-                              }
-                            ]
-                          }
-                        },
-                        "asyncWait": true
-                      },
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiTextblock_4::Text%/ctrl%",
-                        "value": {
-                          "objectType": "Symbol",
-                          "valueType": "tchmi:general#/definitions/String",
-                          "symbolExpression": "%s%PLC1.MAIN.SerialDaMaquina%/s%"
-                        },
-                        "asyncWait": true
-                      },
-                      {
-                        "objectType": "WriteToSymbol",
-                        "active": true,
-                        "symbolExpression": "%ctrl%TcHmiTextblock_4::TextColor%/ctrl%",
-                        "value": {
-                          "objectType": "StaticValue",
-                          "valueType": "tchmi:framework#/definitions/SolidColor",
-                          "value": {
-                            "color": "rgba(153, 153, 153, 1)"
-                          }
-                        },
-                        "asyncWait": true
+                        "color": "rgba(153, 32, 32, 0)",
+                        "stop": "100%"
                       }
                     ]
                   }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "BAIXA PRESSÃO NO SISTEMA PNEUMÁTICO"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                "fnParams": [
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "BAIXA PRESSÃO NO SISTEMA PNEUMÁTICO"
+                  }
                 ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 0.0,
+                    "stopPoints": [
+                      {
+                        "color": "rgba(0, 0, 0, 1)",
+                        "stop": "0%"
+                      },
+                      {
+                        "color": "rgba(0, 0, 0, 1)",
+                        "stop": "60%"
+                      },
+                      {
+                        "color": "rgba(25, 75, 105, 1)",
+                        "stop": "100%"
+                      }
+                    ]
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(153, 153, 153, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::Text%/ctrl%",
+                "value": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.MAIN.SerialDaMaquina%/s%"
+                },
                 "asyncWait": true
               }
             ]
@@ -2436,6 +2425,10 @@
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "%s%PLC1.Seguridad.TampaHomogAberta%/s%",
+    "actions": []
   }
 ]
 </script>
@@ -2545,16 +2538,6 @@
           "value": "Visible"
         },
         "asyncWait": true
-      },
-      {
-        "objectType": "JavaScript",
-        "active": false,
-        "sourceLines": [
-          "location.reload(true);"
-        ],
-        "injectContextObject": false,
-        "asyncWait": true,
-        "waitMode": "Synchronous"
       }
     ]
   },
@@ -9614,7 +9597,7 @@
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Path",
-                  "value": "Images/PRINCIPAL/B300-FONDO.png"
+                  "value": "Images/Render LS-B300S-0022.png"
                 },
                 "asyncWait": true
               },

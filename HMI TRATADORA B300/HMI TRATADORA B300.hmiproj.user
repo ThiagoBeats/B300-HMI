@@ -4,7 +4,7 @@
     <RecentColors>[
   {
     "counter": 0,
-    "color": "#FF194B69"
+    "color": "#FF13DCC8"
   },
   {
     "counter": 0,
@@ -12,11 +12,19 @@
   },
   {
     "counter": 0,
-    "color": "#FF04A401"
+    "color": "#FF194B69"
   },
   {
     "counter": 0,
-    "color": "#FF13DCC8"
+    "color": "#00000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FFFFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#FF04A401"
   },
   {
     "counter": 0,
@@ -73,14 +81,6 @@
   {
     "counter": 0,
     "color": "#FF535151"
-  },
-  {
-    "counter": 0,
-    "color": "#FF393939"
-  },
-  {
-    "counter": 0,
-    "color": "#FF050505"
   }
 ]</RecentColors>
     <TcHmiEditor_SelectBindingWindowDimension>429;232;958;672</TcHmiEditor_SelectBindingWindowDimension>

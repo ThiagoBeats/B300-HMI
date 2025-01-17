@@ -27,7 +27,7 @@
     <HmiViewportUserScaleable>Default</HmiViewportUserScaleable>
     <HmiPostProcessing>True</HmiPostProcessing>
     <Name>HMI TRATADORA B300</Name>
-    <HmiCommunicationRouterPort>10122</HmiCommunicationRouterPort>
+    <HmiCommunicationRouterPort>10123</HmiCommunicationRouterPort>
     <HmiCommunicationServerAuthPort>13000</HmiCommunicationServerAuthPort>
     <HmiInitial>1.12.760.59</HmiInitial>
     <HmiRecent>1.12.762.46</HmiRecent>
@@ -118,6 +118,12 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
+    <Content Include="Images\Render LS-B300S-002.png">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Images\Render LS-B300S-0022.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Testes\Garuda and Vishnu.stl">
       <SubType>Content</SubType>
     </Content>
@@ -415,7 +421,7 @@
     <Content Include="Images\POLVOS\POLVO MEDIO.png">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Images\PRINCIPAL\B300-FONDO.png">
+    <Content Include="Images\PRINCIPAL\B300-dFONDO.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\PRINCIPAL\BOTON CONFIG.png">
