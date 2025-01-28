@@ -418,7 +418,7 @@
 ]
 </script>
 </div>
-<div id="NumericInput_PESO_PATRON" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="3" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-max-value="10" data-tchmi-min-value="0.001" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="55" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMI.rPesoPatron_WT_CA1|BindingMode=TwoWay%/s%" data-tchmi-width="9" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="36" data-tchmi-ignore-invalid-values="true" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="170" data-tchmi-visibility="Collapsed" data-tchmi-auto-select-text="true">
+<div id="NumericInput_PESO_PATRON" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-max-value="10" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="55" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMI.rPesoPatron_WT_CA1|BindingMode=TwoWay%/s%" data-tchmi-width="9" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="36" data-tchmi-ignore-invalid-values="true" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="170" data-tchmi-visibility="Collapsed" data-tchmi-auto-select-text="true">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,

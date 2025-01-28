@@ -118,12 +118,16 @@
   <Target Name="Clean" DependsOnTargets="$(CleanDependsOn)" />
   <Target Name="ReBuild" DependsOnTargets="Clean; Build" />
   <ItemGroup>
+    <Content Include="Images\PRINCIPAL\Render LS-B300S-002.png">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Images\Render LS-B300S-002.png">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Images\Render LS-B300S-0022.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json" />
     <Content Include="Testes\Garuda and Vishnu.stl">
       <SubType>Content</SubType>
     </Content>

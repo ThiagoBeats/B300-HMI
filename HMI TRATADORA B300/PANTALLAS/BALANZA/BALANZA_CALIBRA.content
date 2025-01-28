@@ -1,4 +1,4 @@
-<div id="BALANZA_CALIBRA" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="10" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-creator-viewport-width="1024" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-height-unit="%" data-tchmi-right="0" data-tchmi-bottom="0">
+<div id="BALANZA_CALIBRA" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="10" data-tchmi-left="0" data-tchmi-width="100" data-tchmi-creator-viewport-width="1024" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-right-unit="%" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-height-unit="%" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-creator-viewport-height="600">
 <div id="Container_BAL_CALIBRAR" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="1" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%">
 <div id="NumericInput_PESO_PATRON_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-max-value="10000" data-tchmi-min-value="0" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="55" data-tchmi-top-unit="%" data-tchmi-value="0" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="28" data-tchmi-ignore-invalid-values="false" data-tchmi-value-horizontal-alignment="Center" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="170" data-tchmi-visibility="Collapsed" data-tchmi-auto-select-text="true">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
@@ -310,7 +310,7 @@
 ]
 </script>
 </div>
-<div id="Textblock_ERROR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left="15" data-tchmi-left-unit="%" data-tchmi-text="ERROR" data-tchmi-top="56" data-tchmi-top-unit="%" data-tchmi-width="50" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="200" data-tchmi-text-font-size-unit="%" data-tchmi-visibility="Collapsed">
+<div id="Textblock_ERROR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left="15" data-tchmi-left-unit="%" data-tchmi-text="%l%ERROR_EN_LA_CALIBRACION%/l%" data-tchmi-top="56" data-tchmi-top-unit="%" data-tchmi-width="50" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="200" data-tchmi-text-font-size-unit="%" data-tchmi-visibility="Collapsed">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(250, 0, 0, 1)"
@@ -392,7 +392,7 @@
 }
 </script>
 </div>
-<div id="Textblock_CalibracionFinaliza" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="15" data-tchmi-left-unit="%" data-tchmi-text=" CALIBRACION FINALIZADA" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-width="50" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="300" data-tchmi-text-font-size-unit="%" data-tchmi-visibility="Collapsed">
+<div id="Textblock_CalibracionFinaliza" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="15" data-tchmi-left-unit="%" data-tchmi-text="%l%CALIBRACION_FINALIZADA%/l%" data-tchmi-top="50" data-tchmi-top-unit="%" data-tchmi-width="50" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="300" data-tchmi-text-font-size-unit="%" data-tchmi-visibility="Collapsed">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(255, 255, 70, 1)"
@@ -596,7 +596,7 @@
 ]
 </script>
 </div>
-<div id="Button_BAL_CALIBRA_SALIR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="SALIR" data-tchmi-top-unit="%" data-tchmi-width="8.0" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="170" data-tchmi-right="23.3" data-tchmi-zindex="4" data-tchmi-bottom="8.0">
+<div id="Button_BAL_CALIBRA_SALIR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%l%SALIR%/l%" data-tchmi-top-unit="%" data-tchmi-width="8.0" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="170" data-tchmi-right="23.3" data-tchmi-zindex="4" data-tchmi-bottom="8.0">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,

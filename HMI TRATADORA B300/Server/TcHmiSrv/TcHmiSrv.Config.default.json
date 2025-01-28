@@ -3392,6 +3392,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.AlarmesDaMaquina.AlrLL": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::AlarmesDaMaquina::AlrLL",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Alarme de nível baixo de óleo nas bombas. Se estiver em falso, alguma bomba está com nível baixo"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.AlarmesDaMaquina.Confirmar": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9340,6 +9357,42 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B1_V1::Valv_Pos1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Válvula na posição 1",
+                        "propertyOrder": 5
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B1_V1::Valv_Pos2",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Válvula na posição 2",
+                        "propertyOrder": 6
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Descarga_semilla.PE_B1_V1_CmdAuto_Pos1": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9557,6 +9610,42 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1::Cmd_Man_Pos1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL"
+                    },
+                    {
+                        "comment": "Comando manual para a posição 1",
+                        "propertyOrder": 12
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1::Cmd_Man_Pos2",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL"
+                    },
+                    {
+                        "comment": "Comando manual para a posição 2",
+                        "propertyOrder": 13
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Descarga_semilla.PE_B2_V1.Estado": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9574,6 +9663,42 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1::Valv_Pos1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Válvula na posição 1",
+                        "propertyOrder": 5
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1::Valv_Pos2",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Válvula na posição 2",
+                        "propertyOrder": 6
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Descarga_semilla.PE_B2_V1_CmdAuto_Pos1": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9581,6 +9706,78 @@
             "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1_CmdAuto_Pos1",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B3_V1::Cmd_Man_Pos1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL"
+                    },
+                    {
+                        "comment": "Comando manual para a posição 1",
+                        "propertyOrder": 12
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B3_V1::Cmd_Man_Pos2",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL"
+                    },
+                    {
+                        "comment": "Comando manual para a posição 2",
+                        "propertyOrder": 13
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B3_V1::Valv_Pos1",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Válvula na posição 1",
+                        "propertyOrder": 5
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B3_V1::Valv_Pos2",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Válvula na posição 2",
+                        "propertyOrder": 6
+                    }
+                ]
             },
             "USEMAPPING": true
         },
@@ -10740,6 +10937,234 @@
                 ]
             },
             "SUBSYMBOL_MAPPING": "",
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP1_L1_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP1_L1_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP1_L2_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP1_L2_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP1_L3_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP1_L3_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP1_L4_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP1_L4_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP2_L5_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP2_L5_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP2_L6_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP2_L6_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP2_L7_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP2_L7_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP2_L8_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP2_L8_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP3_L10_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP3_L10_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP3_L11_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP3_L11_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP3_L12_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP3_L12_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Entradas.bPP3_L9_BD_MangRota": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Entradas::bPP3_L9_BD_MangRota",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
             "USEMAPPING": true
         },
         "PLC1.Entradas.wPP1_L1_BD_PV": {
@@ -26056,6 +26481,25 @@
             "SUBSYMBOL_MAPPING": "",
             "USEMAPPING": true
         },
+        "PLC1.Seguridad.ParadaDePorta": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Seguridad::ParadaDePorta",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        }
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Seguridad.TampaHomogAberta": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -26071,6 +26515,26 @@
                             "TcAddressType": "Input"
                         },
                         "comment": "Tampa do homogeneizador aberta"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Seguridad.TampaHomogFechada": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Seguridad::TampaHomogFechada",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "attributes": {
+                            "TcAddressType": "Input"
+                        },
+                        "comment": "Tampa do homogeneizador fechada"
                     }
                 ]
             },
@@ -32867,6 +33331,7 @@
                 "PLC1.Agitadores.PP3_L11_AG.Marcha_Equipo": 3,
                 "PLC1.Agitadores.PP3_L12_AG.Marcha_Equipo": 3,
                 "PLC1.Agitadores.PP3_L9_AG.Marcha_Equipo": 3,
+                "PLC1.AlarmesDaMaquina.AlrLL": 3,
                 "PLC1.AlarmesDaMaquina.Confirmar": 3,
                 "PLC1.BancoDeDados.ComandoSalvar": 3,
                 "PLC1.BancoDeDados.ComandoSalvar.0": 3,
@@ -33310,6 +33775,8 @@
                 "PLC1.DatosProceso.LoteCargado": 3,
                 "PLC1.DatosProceso.NomeLote": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1.Activa_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1_CmdAuto_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1_Teste.Estado": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1_Teste.Eventos_Parciales": 3,
@@ -33323,8 +33790,16 @@
                 "PLC1.Descarga_semilla.PE_B1_V3_Teste.Eventos_Parciales": 3,
                 "PLC1.Descarga_semilla.PE_B1_V3_Teste.Reset_Eventos": 3,
                 "PLC1.Descarga_semilla.PE_B1_V3_Teste.TempoAbertura": 3,
+                "PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1.Estado": 3,
+                "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1_CmdAuto_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos2": 3,
+                "PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B3_V1_CmdAuto_Pos1": 3,
                 "PLC1.Descarga_semilla.fbPE_B_VF1.Acionamentos": 3,
                 "PLC1.Descarga_semilla.fbPE_B_VF1.ResetContadores": 3,
@@ -33377,6 +33852,18 @@
                 "PLC1.Entradas.TR_S_V4_ZC": 3,
                 "PLC1.Entradas.TR_S_V4_ZO": 3,
                 "PLC1.Entradas.TR_S_WT1_rValue_REAL": 3,
+                "PLC1.Entradas.bPP1_L1_BD_MangRota": 3,
+                "PLC1.Entradas.bPP1_L2_BD_MangRota": 3,
+                "PLC1.Entradas.bPP1_L3_BD_MangRota": 3,
+                "PLC1.Entradas.bPP1_L4_BD_MangRota": 3,
+                "PLC1.Entradas.bPP2_L5_BD_MangRota": 3,
+                "PLC1.Entradas.bPP2_L6_BD_MangRota": 3,
+                "PLC1.Entradas.bPP2_L7_BD_MangRota": 3,
+                "PLC1.Entradas.bPP2_L8_BD_MangRota": 3,
+                "PLC1.Entradas.bPP3_L10_BD_MangRota": 3,
+                "PLC1.Entradas.bPP3_L11_BD_MangRota": 3,
+                "PLC1.Entradas.bPP3_L12_BD_MangRota": 3,
+                "PLC1.Entradas.bPP3_L9_BD_MangRota": 3,
                 "PLC1.Entradas.wPP1_L1_BD_PV": 3,
                 "PLC1.HMI.CA1_L1_FT1_caudal": 3,
                 "PLC1.HMI.CA1_L1_FT1_temp": 3,
@@ -34353,7 +34840,9 @@
                 "PLC1.Salidas.TR_S_WT1_wControl": 3,
                 "PLC1.Salidas.bTR_S_VE1": 3,
                 "PLC1.Seguridad.PB_Emergencia": 3,
+                "PLC1.Seguridad.ParadaDePorta": 3,
                 "PLC1.Seguridad.TampaHomogAberta": 3,
+                "PLC1.Seguridad.TampaHomogFechada": 3,
                 "PLC1.Testes.EmTeste": 3,
                 "PLC1.Testes.LinhaSelecionada": 3,
                 "PLC1.Testes.Teste2": 3,

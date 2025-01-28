@@ -4,7 +4,7 @@
     <RecentColors>[
   {
     "counter": 0,
-    "color": "#FF13DCC8"
+    "color": "#FF025919"
   },
   {
     "counter": 0,
@@ -12,15 +12,27 @@
   },
   {
     "counter": 0,
+    "color": "#FFFDCA03"
+  },
+  {
+    "counter": 0,
+    "color": "#FF707070"
+  },
+  {
+    "counter": 0,
     "color": "#FF194B69"
   },
   {
     "counter": 0,
-    "color": "#00000000"
+    "color": "#FFFFFFFF"
   },
   {
     "counter": 0,
-    "color": "#FFFFFFFF"
+    "color": "#FF13DCC8"
+  },
+  {
+    "counter": 0,
+    "color": "#00000000"
   },
   {
     "counter": 0,
@@ -69,18 +81,6 @@
   {
     "counter": 0,
     "color": "#19000000"
-  },
-  {
-    "counter": 0,
-    "color": "#02000000"
-  },
-  {
-    "counter": 0,
-    "color": "#64000000"
-  },
-  {
-    "counter": 0,
-    "color": "#FF535151"
   }
 ]</RecentColors>
     <TcHmiEditor_SelectBindingWindowDimension>429;232;958;672</TcHmiEditor_SelectBindingWindowDimension>
@@ -409,6 +409,33 @@
       "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L10.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\CLP_CARDS\\CONFIG_142_CLP_CARDS.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\CONFIG\\CONFIG_141_BALANZA.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\CALIBRACION_LIQ_PC.content",
+      "DesignAreaSplitSize": "Splitted",
+      "CodeAreaSplitSize": "Splitted",
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",

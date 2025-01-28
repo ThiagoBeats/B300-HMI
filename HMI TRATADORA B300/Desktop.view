@@ -1665,7 +1665,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.Entradas.TR_S_PDI%/s%"
                 },
                 "compare2": {
@@ -1725,6 +1725,90 @@
                     "objectType": "StaticValue",
                     "valueType": "tchmi:general#/definitions/String",
                     "value": "BAIXA PRESSÃO NO SISTEMA PNEUMÁTICO"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(255, 255, 255, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "elseif": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.Seguridad.TampaHomogFechada%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 0.0,
+                    "stopPoints": [
+                      {
+                        "color": "rgba(98, 19, 19, 1)",
+                        "stop": "0%"
+                      },
+                      {
+                        "color": "rgba(255, 13, 13, 1)",
+                        "stop": "64.93%"
+                      },
+                      {
+                        "color": "rgba(153, 32, 32, 0)",
+                        "stop": "100%"
+                      }
+                    ]
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiTextblock_4::Text%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "value": "TAMPA DO HOMOGENEIZADOR ABERTA"
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                "fnParams": [
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "TAMPA DO HOMOGENEIZADOR ABERTA"
                   }
                 ],
                 "asyncWait": true
@@ -2427,8 +2511,125 @@
     ]
   },
   {
-    "event": "%s%PLC1.Seguridad.TampaHomogAberta%/s%",
-    "actions": []
+    "event": "%s%PLC1.AlarmesDaMaquina.AlrLL%/s%",
+    "actions": [
+      {
+        "objectType": "JavaScript",
+        "active": true,
+        "sourceLines": [
+          "//Nível baixo na bomba 1",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP1_L1_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 1');});",
+          "     ",
+          "//Nível baixo na bomba 2",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP1_L2_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 2');});",
+          "     ",
+          "//Nível baixo na bomba 3",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP1_L3_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 3');});",
+          "     ",
+          "//Nível baixo na bomba 4",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP1_L4_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 4');});",
+          "     ",
+          "//Nível baixo na bomba 5",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP2_L5_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 5');});",
+          "     ",
+          "//Nível baixo na bomba 6",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP2_L6_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 6');});",
+          "     ",
+          "//Nível baixo na bomba 7",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP2_L7_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 7');});",
+          "     ",
+          "//Nível baixo na bomba 8",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP2_L8_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 8');});",
+          "     ",
+          "//Nível baixo na bomba 9",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP3_L9_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 9');});",
+          "     ",
+          "//Nível baixo na bomba 10",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP3_L10_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 10');});",
+          "     ",
+          "//Nível baixo na bomba 11",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP3_L11_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 11');});",
+          "     ",
+          "//Nível baixo na bomba 12",
+          "TcHmi.Symbol.readEx2('%s%PLC1.Entradas.bPP3_L12_BD_MangRota%/s%', function (data) {",
+          "     var value = data.value; ",
+          "     value ? null : TcHmi.Functions.HMI_TRATADORA_B300.Alert2('NÍVEL BAIXO DE ÓLEO NA BOMBA 12');});"
+        ],
+        "injectContextObject": false,
+        "asyncWait": true,
+        "waitMode": "Synchronous"
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.Seguridad.ParadaDePorta%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.Seguridad.ParadaDePorta%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                "fnParams": [
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "TAMPA DA TRATADORA ABERTA"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": []
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>
@@ -6395,6 +6596,17 @@
           "value": true
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMI.bModo_UnCiclo%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
       }
     ]
   }
@@ -7798,7 +8010,7 @@
 }
 </script>
 </div>
-<div id="Textblock_ERR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="14" data-tchmi-height-unit="%" data-tchmi-left="63" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-right="0" data-tchmi-text-font-weight="Normal" data-tchmi-width="30" data-tchmi-text="%f%&quot;ERR: &quot;+(%s%PLC1.HMI.bSet_pesoSemilla%/s%-%s%PLC1.Entradas.TR_S_WT1_rValue_REAL%/s%).toFixed(1)+&quot; kgs&quot;%/f%">
+<div id="Textblock_ERR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="14" data-tchmi-height-unit="%" data-tchmi-left="63" data-tchmi-left-unit="%" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-right="0" data-tchmi-text-font-weight="Normal" data-tchmi-width="30" data-tchmi-text="%f%&quot;ERR: &quot;+(%s%PLC1.HMI.bSet_pesoSemilla%/s%-%s%PLC1.Entradas.TR_S_WT1_rValue_REAL%/s%).toFixed(1)+&quot; kg&quot;%/f%">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(219, 61, 61, 1)"

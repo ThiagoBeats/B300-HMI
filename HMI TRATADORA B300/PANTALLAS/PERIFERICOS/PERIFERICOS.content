@@ -2482,7 +2482,7 @@
                 "compare2": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
-                  "value": "Active"
+                  "value": "Normal"
                 },
                 "compareOperator": "==",
                 "logic": null
@@ -2619,7 +2619,7 @@
                 "compare2": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
-                  "value": "Active"
+                  "value": "Normal"
                 },
                 "compareOperator": "==",
                 "logic": null
@@ -2756,7 +2756,7 @@
                 "compare2": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/ToggleState",
-                  "value": "Active"
+                  "value": "Normal"
                 },
                 "compareOperator": "==",
                 "logic": null
@@ -5099,7 +5099,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.Descarga_semilla.PE_B1_V1_Teste.Estado%/s%",
+    "event": "%s%PLC1.HMI.PE_B1_V1_Estado%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -5136,7 +5136,7 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/INT",
-          "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B1_V1_Teste.Estado%/s%"
+          "symbolExpression": "%s%PLC1.HMI.PE_B1_V1_Estado%/s%"
         },
         "cases": [
           {
@@ -5237,6 +5237,28 @@
                 "asyncWait": true
               }
             ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiButton_64::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(251, 0, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
           }
         ],
         "asyncWait": true
@@ -5248,7 +5270,7 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
@@ -5271,7 +5293,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%s%PLC1.HMI.PE_B1_V1_Cmd_Man_Pos1%/s%",
+                "symbolExpression": "%s%PLC1.HMI.PE_B1_V1_Cmd_Man_Pos2%/s%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/BOOL",
@@ -5354,6 +5376,59 @@
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/BOOL",
                   "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos1%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.HMI.PE_B1_V1_Cmd_Man_Pos2%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.HMI.PE_B1_V1_Cmd_Man_Pos1%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
                 },
                 "asyncWait": true
               }
@@ -5552,6 +5627,28 @@
                 "asyncWait": true
               }
             ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiButton_65::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(251, 0, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
           }
         ],
         "asyncWait": true
@@ -5563,7 +5660,7 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
@@ -5729,6 +5826,59 @@
           }
         ],
         "asyncWait": true
+      },
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos1%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos1%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos2%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
       }
     ]
   }
@@ -5758,7 +5908,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.Descarga_semilla.PE_B1_V3_Teste.Estado%/s%",
+    "event": "%s%PLC1.HMI.PE_B3_V1_Estado%/s%",
     "actions": [
       {
         "objectType": "SwitchCase",
@@ -5766,7 +5916,7 @@
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:general#/definitions/INT",
-          "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B1_V3_Teste.Estado%/s%"
+          "symbolExpression": "%s%PLC1.HMI.PE_B3_V1_Estado%/s%"
         },
         "cases": [
           {
@@ -5867,6 +6017,28 @@
                 "asyncWait": true
               }
             ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%TcHmiButton_66::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(251, 0, 0, 1)"
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
           }
         ],
         "asyncWait": true
@@ -5878,7 +6050,7 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
@@ -5996,6 +6168,59 @@
                   "objectType": "StaticValue",
                   "valueType": "tchmi:general#/definitions/BOOL",
                   "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      },
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos1%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos1%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL",
+                  "value": true
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos2%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL",
+                  "value": true
                 },
                 "asyncWait": true
               }

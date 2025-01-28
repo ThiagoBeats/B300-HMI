@@ -650,7 +650,7 @@
 }
 </script>
 </div>
-<div id="Button_INGENIERIA.FABRICA_09" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-text="PLC" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="15">
+<div id="Button_INGENIERIA.FABRICA_09" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-text="ARQ. DE REDE" data-tchmi-top="30" data-tchmi-top-unit="%" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="200" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right-unit="%" data-tchmi-right="15">
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"

@@ -36,7 +36,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_SUP_25::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -224,7 +224,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_SUP_25::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -296,7 +296,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_SUP_25::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -459,7 +459,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_INF_25::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -546,7 +546,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_INF_25::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -644,7 +644,7 @@
 }
 </script>
 </div>
-<div id="Textblock_ERROR_OBTENIDO_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="%f%&quot;ERROR PROMEDIO OBTENIDO:  &quot;+%s%PLC1.HMICA3.Error_promedio%/s%.toFixed(1)+&quot; %&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-bottom="5" data-tchmi-zindex="5" data-tchmi-top="5" data-tchmi-right="1" data-tchmi-visibility="Collapsed">
+<div id="Textblock_ERROR_OBTENIDO_4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="50" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%ERROR_PROMEDIO%/l% + &quot;: &quot;+%s%PLC1.HMICA3.Error_promedio%/s%.toFixed(1)+&quot; %&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-bottom="5" data-tchmi-zindex="5" data-tchmi-top="5" data-tchmi-right="1" data-tchmi-visibility="Collapsed">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 2, 1)"
@@ -2028,7 +2028,7 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "%s%PLC1.HMICA2.Tiempo_calibracion.2%/s%",
+    "event": "%s%PLC1.HMICA3.Tiempo_calibracion.2%/s%",
     "actions": [
       {
         "objectType": "Condition",
@@ -2059,7 +2059,7 @@
                 "compare2": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%f%%s%PLC1.HMICA3.TInyeccion_calibracion%/s%*.75\r\n%/f%"
+                  "symbolExpression": "%f%%s%PLC1.HMICA3.TInyeccion_calibracion%/s%*0.75\r\n%/f%"
                 },
                 "compareOperator": ">=",
                 "logic": "AND"
@@ -2069,7 +2069,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%Textblock_ULTIMO_SEG_4::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%Textblock_ULTIMO_SEG_5::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -2086,7 +2086,7 @@
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
-                "symbolExpression": "%ctrl%Textblock_ULTIMO_SEG_4::BackgroundColor%/ctrl%",
+                "symbolExpression": "%ctrl%Textblock_ULTIMO_SEG_5::BackgroundColor%/ctrl%",
                 "value": {
                   "objectType": "StaticValue",
                   "valueType": "tchmi:framework#/definitions/Color",
@@ -2906,7 +2906,7 @@
 
 </div>
 <div id="Container_VACIAR_PROBETA_4" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="41" data-tchmi-height-unit="%" data-tchmi-left="3" data-tchmi-left-unit="%" data-tchmi-top="21" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="3" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-zindex="4" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible">
-<div id="Textblock_VACIAR_PROBETA_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="ES NECESARIO VACIAR EL RECIPIENTE PARA CONTINUAR" data-tchmi-top="25" data-tchmi-right="25" data-tchmi-height="40">
+<div id="Textblock_VACIAR_PROBETA_8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="%l%VACIAR_RECIPIENTE%/l%" data-tchmi-top="25" data-tchmi-right="25" data-tchmi-height="40">
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
@@ -2914,7 +2914,7 @@
 }
 </script>
 </div>
-<div id="Textblock_VACIAR_PROBETA_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="PULSE &quot;OK&quot; CUANDO YA ESTE COLOCADO NUEVAMENTE" data-tchmi-top="44" data-tchmi-right="25" data-tchmi-height="40">
+<div id="Textblock_VACIAR_PROBETA_9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="%l%PULSE_OK%/l%" data-tchmi-top="44" data-tchmi-right="25" data-tchmi-height="40">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(252, 249, 10, 1)"

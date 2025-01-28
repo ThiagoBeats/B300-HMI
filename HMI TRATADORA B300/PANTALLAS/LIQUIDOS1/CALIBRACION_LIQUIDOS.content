@@ -1,4 +1,4 @@
-<div id="CALIBRACION_LIQUIDOS" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="15" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-height-mode="Content" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-creator-viewport-width="1024">
+<div id="CALIBRACION_LIQUIDOS" data-tchmi-type="TcHmi.Controls.System.TcHmiContent" data-tchmi-top="15" data-tchmi-left="0" data-tchmi-width-unit="%" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-height-mode="Content" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-creator-viewport-width="1024" data-tchmi-creator-viewport-height="600">
 <div id="Container_CALIBRA_LIQUIDOS_1_2_3_4" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-zindex="6" data-tchmi-visibility="Visible" data-tchmi-width="100" data-tchmi-height="100" data-tchmi-creator-visibility="Visible" data-tchmi-creator-locked="False">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
@@ -14,7 +14,7 @@
 }
 </script>
 </div>
-<div id="NumericInput_CAL_PESOBATCH_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-max-value="400" data-tchmi-min-value="10" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="6" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.Peso_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="12" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="160" data-tchmi-zindex="4" data-tchmi-ignore-invalid-values="true" data-tchmi-auto-select-text="true">
+<div id="NumericInput_CAL_PESOBATCH_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-max-value="400" data-tchmi-min-value="10" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="6" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.Peso_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="12" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="160" data-tchmi-zindex="4" data-tchmi-ignore-invalid-values="true" data-tchmi-auto-select-text="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "left": 3,
@@ -36,7 +36,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_SUP_22::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -186,7 +186,7 @@
 }
 </script>
 </div>
-<div id="NumericInput_CAL_DOSIS_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-max-value="9999" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="52" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.Dosis_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="12" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="160" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true">
+<div id="NumericInput_CAL_DOSIS_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-max-value="9999" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="52" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.Dosis_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="12" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="160" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "left": 3,
@@ -224,7 +224,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_SUP_22::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -258,7 +258,7 @@
 }
 </script>
 </div>
-<div id="NumericInput_CAL_TIEMPOINY_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-max-value="999" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="75" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.TInyeccion_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="12" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="160" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true">
+<div id="NumericInput_CAL_TIEMPOINY_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="20" data-tchmi-height-unit="%" data-tchmi-left="32" data-tchmi-left-unit="%" data-tchmi-max-value="999" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top="75" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.TInyeccion_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="12" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="160" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "left": 3,
@@ -296,7 +296,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_SUP_22::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -437,7 +437,7 @@
 }
 </script>
 </div>
-<div id="NumericInput_TOLEN_ERROR_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-max-value="10" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.Tolerancia_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="9" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="200" data-tchmi-bottom="10" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true">
+<div id="NumericInput_TOLEN_ERROR_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="0" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-left="35" data-tchmi-left-unit="%" data-tchmi-max-value="10" data-tchmi-min-value="1" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.Tolerancia_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="9" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="200" data-tchmi-bottom="10" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "left": 3,
@@ -459,7 +459,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_INF_22::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -524,7 +524,7 @@
 }
 </script>
 </div>
-<div id="NumericInput_CAPMAX_PROBETA_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-max-value="10" data-tchmi-min-value="0.5" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.VolMaxProbeta_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="180" data-tchmi-right="5.5" data-tchmi-bottom="10" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true">
+<div id="NumericInput_CAPMAX_PROBETA_L01_22" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiNumericInput" data-tchmi-auto-focus-out="true" data-tchmi-decimal-digits="1" data-tchmi-height="80" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-max-value="10" data-tchmi-min-value="0.5" data-tchmi-reset-to-last-valid-value="true" data-tchmi-top-unit="%" data-tchmi-value="%s%PLC1.HMICA1.VolMaxProbeta_calibracion|BindingMode=TwoWay%/s%" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-value-horizontal-alignment="Right" data-tchmi-value-font-size-unit="%" data-tchmi-value-font-size="180" data-tchmi-right="5.5" data-tchmi-bottom="10" data-tchmi-zindex="4" data-tchmi-auto-select-text="true" data-tchmi-ignore-invalid-values="true" data-tchmi-system-keyboard-input-mode="numeric">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "left": 3,
@@ -546,7 +546,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%Keyboard_NUM_INF_22::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -2904,7 +2904,7 @@
 </script>
 </div>
 <div id="Container_VACIAR_PROBETA_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="41" data-tchmi-height-unit="%" data-tchmi-left="3" data-tchmi-left-unit="%" data-tchmi-top="21" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="3" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-zindex="4" data-tchmi-visibility="Collapsed" data-tchmi-creator-visibility="Visible">
-<div id="Textblock_VACIAR_PROBETA_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="ES NECESARIO VACIAR EL RECIPIENTE PARA CONTINUAR" data-tchmi-top="25" data-tchmi-right="25" data-tchmi-height="40">
+<div id="Textblock_VACIAR_PROBETA_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="%l%VACIAR_RECIPIENTE%/l%" data-tchmi-top="25" data-tchmi-right="25" data-tchmi-height="40">
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
@@ -2912,7 +2912,7 @@
 }
 </script>
 </div>
-<div id="Textblock_VACIAR_PROBETA_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="PULSE &quot;OK&quot; CUANDO YA ESTE COLOCADO NUEVAMENTE" data-tchmi-top="44" data-tchmi-right="25" data-tchmi-height="40">
+<div id="Textblock_VACIAR_PROBETA_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height-unit="%" data-tchmi-left="10" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-zindex="4" data-tchmi-text="%l%PULSE_OK%/l%" data-tchmi-top="44" data-tchmi-right="25" data-tchmi-height="40">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(252, 249, 10, 1)"
