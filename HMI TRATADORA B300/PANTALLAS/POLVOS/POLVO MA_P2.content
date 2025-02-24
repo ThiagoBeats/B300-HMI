@@ -1858,7 +1858,7 @@
 </script>
 </div>
 </div>
-<div id="Textblock_PESAJE_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left="61" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%PLC1.Entradas.TR_P2_WT1_rValue_REAL%/s%.toFixed(3)%/f%" data-tchmi-top-unit="%" data-tchmi-width="14" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-bottom="0">
+<div id="Textblock_PESAJE_20" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="8" data-tchmi-height-unit="%" data-tchmi-left="61" data-tchmi-left-unit="%" data-tchmi-text="%f%%s%PLC1.Dosificador_Polvo_2.TR_P2_WT1_rValue_REAL%/s%.toFixed(3)%/f%" data-tchmi-top-unit="%" data-tchmi-width="14" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="250" data-tchmi-bottom="0">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
   "color": "rgba(25, 75, 105, 1)"

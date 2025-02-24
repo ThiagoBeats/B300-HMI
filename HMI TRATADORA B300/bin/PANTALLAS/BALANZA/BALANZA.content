@@ -10,7 +10,7 @@
 <div id="Container_BAL_GENERAL" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="15" data-tchmi-left-unit="%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right="15" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-zindex="1">
 <div id="TcHmiImage_6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height="90" data-tchmi-height-unit="%" data-tchmi-left="12" data-tchmi-left-unit="%" data-tchmi-top="10" data-tchmi-top-unit="%" data-tchmi-width="80" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-background-image="Images/BALANZA/BALANZA BASE 3.png" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-height="100" data-tchmi-background-image-horizontal-alignment="Left">
 </div>
-<div id="Container_BAL_DESCARGA_MA" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-top="65" data-tchmi-top-unit="%" data-tchmi-width="28" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="6">
+<div id="Container_BAL_DESCARGA_MA" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-top="55" data-tchmi-top-unit="%" data-tchmi-width="28" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="6">
 <div id="ToggleButton_BAL_DESC_ABRIR_MA" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%l%ABRIR%/l%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="175" data-tchmi-right="0" data-tchmi-zindex="6" data-tchmi-state-symbol="%s%PLC1.HMI.TR_S_V4_Cmd_Man%/s%">
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -497,7 +497,7 @@
 </script>
 </div>
 </div>
-<div id="Container_BAL_PESAS_PATRON" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-top="45" data-tchmi-top-unit="%" data-tchmi-width="28" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="6">
+<div id="Container_BAL_PESAS_PATRON" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-top="40" data-tchmi-top-unit="%" data-tchmi-width="28" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Visible" data-tchmi-zindex="6">
 <div id="ToggleButton_BAL_PESAS_ABRIR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%l%SUBIR%/l%" data-tchmi-top="0" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="175" data-tchmi-right="0" data-tchmi-zindex="6" data-tchmi-state-symbol="%s%PLC1.Salidas.TR_S_V5%/s%">
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -2150,6 +2150,75 @@
 ]
 </script>
 </div>
+<div id="btEsvaziarBalanca" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="80.0" data-tchmi-left-unit="%" data-tchmi-text="%l%forcar_descarga%/l%" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="13" data-tchmi-width-unit="%" data-tchmi-word-wrap="true">
+
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(0, 170, 10, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(225, 230, 226, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "btEsvaziarBalanca.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Balanza_Semilla.FinCarga%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
+<div id="btEsvaziarBalanca_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-text="%l%ESVAZIAR_CAIXA%/l%" data-tchmi-top="70.0" data-tchmi-top-unit="%" data-tchmi-width="13" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="%f%!%s%PLC1.Entradas.TR_S_LLS%/s%%/f%">
+<script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
+{
+  "color": "rgba(0, 170, 10, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
+{
+  "color": "rgba(225, 230, 226, 1)"
+}
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "btEsvaziarBalanca_1.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.Balanza_Semilla.EsvaziarCaixa%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
+</div>
 </div>
 <div id="Container_POL_BARRA_IZQ_1" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="15" data-tchmi-width-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-left="0" data-tchmi-height="100" data-tchmi-bottom="0" data-tchmi-zindex="1">
 <div id="Button_BALANZA_HISTORICO" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="7" data-tchmi-left-unit="%" data-tchmi-text="%l%HISTORICO%/l%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right-unit="%" data-tchmi-width="86" data-tchmi-bottom="12.5" data-tchmi-bottom-unit="%" data-tchmi-state-symbol="%s%PLC_HUGO.Entradas.TR_S_V1_ZC%/s%">
@@ -2252,7 +2321,7 @@
 ]
 </script>
 </div>
-<div id="Button_BALANZA_CALIBRAR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="7" data-tchmi-left-unit="%" data-tchmi-text="%l%CALIBRAR%/l%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right-unit="%" data-tchmi-width="86" data-tchmi-bottom="1" data-tchmi-bottom-unit="%">
+<div id="Button_BALANZA_CALIBRAR" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="10" data-tchmi-height-unit="%" data-tchmi-left="7" data-tchmi-left-unit="%" data-tchmi-text="%l%CALIBRAR%/l%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="130" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right-unit="%" data-tchmi-width="86" data-tchmi-bottom="1" data-tchmi-bottom-unit="%" data-tchmi-is-enabled="%f%!%s%PLC1.HMI.bModo_Auto%/s%%/f%">
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
   "color": "rgba(217, 183, 52, 1)"
@@ -2533,12 +2602,12 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%TcHmiKeyboard_1::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/Visibility",
-          "value": "Visible"
+          "value": "Collapsed"
         },
         "asyncWait": true
       }
@@ -2581,7 +2650,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%TcHmiKeyboard_1::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -2629,7 +2698,7 @@
     "actions": [
       {
         "objectType": "WriteToSymbol",
-        "active": true,
+        "active": false,
         "symbolExpression": "%ctrl%TcHmiKeyboard_1::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
@@ -2698,19 +2767,29 @@
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
-  "color": "rgba(0, 0, 0, 1)"
+  "angle": 90.0,
+  "stopPoints": [
+    {
+      "color": "rgba(0, 0, 0, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(90, 72, 72, 1)",
+      "stop": "100%"
+    }
+  ]
 }
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
-  "color": "rgba(25, 75, 105, 1)"
+  "color": "rgba(255, 255, 255, 1)"
 }
 </script>
 
 <script data-tchmi-target-attribute="data-tchmi-border-color" type="application/json">
 {
-  "color": "rgba(25, 75, 105, 1)"
+  "color": "rgba(153, 153, 153, 1)"
 }
 </script>
 
@@ -2721,7 +2800,7 @@
     "actions": [
       {
         "objectType": "SwitchCase",
-        "active": true,
+        "active": false,
         "compare": {
           "objectType": "Symbol",
           "valueType": "tchmi:framework#/definitions/ToggleState",
@@ -2799,6 +2878,33 @@
             ]
           }
         ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "ToggleButton_AJUSTE_AUTO.onPressed",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMI.rSet_corteGrueso_semilla%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%f%%s%PLC1.HMI.bSet_pesoSemilla%/s% * 0.9%/f%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMI.rSet_corteFino_semilla%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%f%%s%PLC1.HMI.bSet_pesoSemilla%/s% - 1%/f%"
+        },
         "asyncWait": true
       }
     ]

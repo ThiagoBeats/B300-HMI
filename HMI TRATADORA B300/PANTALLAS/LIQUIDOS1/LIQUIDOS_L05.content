@@ -422,7 +422,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiPolyline_169" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolyline" data-tchmi-height="5.5" data-tchmi-height-unit="%" data-tchmi-left="13" data-tchmi-left-unit="%" data-tchmi-points="0,0 200,0" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="34.5" data-tchmi-top-unit="%" data-tchmi-width="9" data-tchmi-width-unit="%" data-tchmi-stroke-thickness="8" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-fill-mode="NonZero">
+<div id="TcHmiPolyline_169" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiPolyline" data-tchmi-height="5.5" data-tchmi-height-unit="%" data-tchmi-left="13" data-tchmi-left-unit="%" data-tchmi-points="0,0 200,0" data-tchmi-scale-mode="ScaleToFill" data-tchmi-top="34.5" data-tchmi-top-unit="%" data-tchmi-width="9.8" data-tchmi-width-unit="%" data-tchmi-stroke-thickness="8" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-fill-mode="NonZero">
 <script data-tchmi-target-attribute="data-tchmi-stroke-color" type="application/json">
 {
   "color": "rgba(213, 245, 245, 1)"
@@ -3610,6 +3610,65 @@
                 "asyncWait": true
               }
             ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.Circuito_L5.fbBomba_L5.Interlock%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
+          {
+            "if": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.Circuito_L5.fbBomba_L5.Interlock%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "compareOperator": "==",
+                "logic": null
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                "fnParams": [
+                  {
+                    "objectType": "Symbol",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "symbolExpression": "%l%MOTOR_INTERTRAVADO%/l%"
+                  }
+                ],
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%s%PLC1.HMI.CmdM_PC2_L5_BD%/s%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": false
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": []
           }
         ],
         "asyncWait": true

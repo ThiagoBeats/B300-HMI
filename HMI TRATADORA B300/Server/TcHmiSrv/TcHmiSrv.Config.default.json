@@ -553,12 +553,14 @@
     },
     "DEFLATECOMPRESSIONLEVEL": 5,
     "DIAGNOSTICS_DOMAINS": [],
-    "DISABLED_CONFIGURATION_HINTS": [],
+    "DISABLED_CONFIGURATION_HINTS": [
+        "USERGROUP_IS_ADMIN"
+    ],
     "DISCOVERY": 2,
     "ENABLE_SERVER_UPDATE": true,
     "ENDPOINTS": [
         "http://127.0.0.1:13000",
-        "http://127.0.0.1:3000"
+        "http://127.0.0.1:3001"
     ],
     "ETAGENABLED": true,
     "EXTENSIONS": {
@@ -3392,6 +3394,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Alarmas.AlarmesMaquina": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Alarmas::AlarmesMaquina",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/INT"
+                    },
+                    {
+                        "comment": "Mapeamento de alarmes da máquina"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.AlarmesDaMaquina.AlrLL": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3414,6 +3433,33 @@
             "DOMAIN": "ADS",
             "DYNAMIC": true,
             "MAPPING": "PLC1::AlarmesDaMaquina::Confirmar",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.EsvaziarCaixa": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::EsvaziarCaixa",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Se a caixa superior estiver sem nível de sementes, permite que a semente remanescente seja carregada na balança"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.FinCarga": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::FinCarga",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
             },
@@ -5139,6 +5185,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L1.fbBomba_L1.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::fbBomba_L1::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L1.fbBomba_L1.TempoFuncionando": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5431,6 +5495,24 @@
                     {
                         "comment": "Quantidade de acionamentos do motor",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.fbBomba_L10.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::fbBomba_L10::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
                     }
                 ]
             },
@@ -5733,6 +5815,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L11.fbBomba_L11.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::fbBomba_L11::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L11.fbBomba_L11.TempoFuncionando": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6025,6 +6125,24 @@
                     {
                         "comment": "Quantidade de acionamentos do motor",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.fbBomba_L12.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::fbBomba_L12::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
                     }
                 ]
             },
@@ -6339,6 +6457,24 @@
                     {
                         "comment": "Quantidade de acionamentos do motor",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.fbBomba_L2.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::fbBomba_L2::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
                     }
                 ]
             },
@@ -6728,6 +6864,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L3.fbBomba_L3.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::fbBomba_L3::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L3.fbBomba_L3.TempoFuncionando": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7088,6 +7242,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L4.fbBomba_L4.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::fbBomba_L4::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L4.fbBomba_L4.TempoFuncionando": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7380,6 +7552,24 @@
                     {
                         "comment": "Quantidade de acionamentos do motor",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.fbBomba_L5.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::fbBomba_L5::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
                     }
                 ]
             },
@@ -7682,6 +7872,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L6.fbBomba_L6.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::fbBomba_L6::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L6.fbBomba_L6.TempoFuncionando": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7974,6 +8182,24 @@
                     {
                         "comment": "Quantidade de acionamentos do motor",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.fbBomba_L7.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::fbBomba_L7::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
                     }
                 ]
             },
@@ -8276,6 +8502,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L8.fbBomba_L8.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::fbBomba_L8::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L8.fbBomba_L8.TempoFuncionando": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -8568,6 +8812,24 @@
                     {
                         "comment": "Quantidade de acionamentos do motor",
                         "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.fbBomba_L9.Interlock": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::fbBomba_L9::Interlock",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "comment": "Deve estar em TRUE para liberar o funcionamento da bomba",
+                        "propertyOrder": 9
                     }
                 ]
             },
@@ -9357,6 +9619,42 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Descarga_semilla.PE_B1_V1.Eventos_Parciales": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B1_V1::Eventos_Parciales",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Contagem de acionamentos",
+                        "propertyOrder": 21
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B1_V1.TempoAcionamento": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B1_V1::TempoAcionamento",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Tempo de acionamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos1": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9663,6 +9961,42 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Descarga_semilla.PE_B2_V1.Eventos_Parciales": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1::Eventos_Parciales",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Contagem de acionamentos",
+                        "propertyOrder": 21
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B2_V1.TempoAcionamento": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B2_V1::TempoAcionamento",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Tempo de acionamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos1": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9740,6 +10074,42 @@
                     {
                         "comment": "Comando manual para a posição 2",
                         "propertyOrder": 13
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B3_V1.Eventos_Parciales": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B3_V1::Eventos_Parciales",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Contagem de acionamentos",
+                        "propertyOrder": 21
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Descarga_semilla.PE_B3_V1.TempoAcionamento": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Descarga_semilla::PE_B3_V1::TempoAcionamento",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Tempo de acionamento",
+                        "propertyOrder": 20
                     }
                 ]
             },
@@ -9844,6 +10214,83 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::Pesada[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::Pesada[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::Pesada[2]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.3": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::Pesada[3]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.4": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::Pesada[4]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.5": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::Pesada[5]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.PromMuestra": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::Calibracion_Po_calc_P1::PromMuestra",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "propertyOrder": 31
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Dosificador_Polvo_1.PolvoAsociado": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9854,6 +10301,93 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Dosificador_Polvo_1.TR_P1_WT1_rValue_REAL": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::TR_P1_WT1_rValue_REAL",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::Pesada[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::Pesada[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.2": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::Pesada[2]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.3": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::Pesada[3]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.4": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::Pesada[4]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.5": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::Pesada[5]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.PromMuestra": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::Calibracion_Po_calc_P2::PromMuestra",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/REAL"
+                    },
+                    {
+                        "propertyOrder": 31
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Dosificador_Polvo_2.PolvoAsociado": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -9861,6 +10395,16 @@
             "MAPPING": "PLC1::Dosificador_Polvo_2::PolvoAsociado",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/STRING%2880%29"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.TR_P2_WT1_rValue_REAL": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::TR_P2_WT1_rValue_REAL",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -16181,6 +16725,16 @@
                         "comment": "Interrompe a lavagem"
                     }
                 ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.HMI.Restart": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::HMI::Restart",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
             },
             "USEMAPPING": true
         },
@@ -33331,8 +33885,11 @@
                 "PLC1.Agitadores.PP3_L11_AG.Marcha_Equipo": 3,
                 "PLC1.Agitadores.PP3_L12_AG.Marcha_Equipo": 3,
                 "PLC1.Agitadores.PP3_L9_AG.Marcha_Equipo": 3,
+                "PLC1.Alarmas.AlarmesMaquina": 3,
                 "PLC1.AlarmesDaMaquina.AlrLL": 3,
                 "PLC1.AlarmesDaMaquina.Confirmar": 3,
+                "PLC1.Balanza_Semilla.EsvaziarCaixa": 3,
+                "PLC1.Balanza_Semilla.FinCarga": 3,
                 "PLC1.BancoDeDados.ComandoSalvar": 3,
                 "PLC1.BancoDeDados.ComandoSalvar.0": 3,
                 "PLC1.BancoDeDados.ComandoSalvar.1": 3,
@@ -33487,6 +34044,7 @@
                 "PLC1.Circuito_L1.Lavagem_Circuito01.stStatus": 3,
                 "PLC1.Circuito_L1.ProductoAsociado": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.Acionamentos": 3,
+                "PLC1.Circuito_L1.fbBomba_L1.Interlock": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.TempoFuncionando": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33506,6 +34064,7 @@
                 "PLC1.Circuito_L10.Lavagem_Circuito10.UltimaLavagem": 3,
                 "PLC1.Circuito_L10.ProductoAsociado": 3,
                 "PLC1.Circuito_L10.fbBomba_L10.Acionamentos": 3,
+                "PLC1.Circuito_L10.fbBomba_L10.Interlock": 3,
                 "PLC1.Circuito_L10.fbBomba_L10.TempoFuncionando": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33525,6 +34084,7 @@
                 "PLC1.Circuito_L11.Lavagem_Circuito11.UltimaLavagem": 3,
                 "PLC1.Circuito_L11.ProductoAsociado": 3,
                 "PLC1.Circuito_L11.fbBomba_L11.Acionamentos": 3,
+                "PLC1.Circuito_L11.fbBomba_L11.Interlock": 3,
                 "PLC1.Circuito_L11.fbBomba_L11.TempoFuncionando": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33544,6 +34104,7 @@
                 "PLC1.Circuito_L12.Lavagem_Circuito12.UltimaLavagem": 3,
                 "PLC1.Circuito_L12.ProductoAsociado": 3,
                 "PLC1.Circuito_L12.fbBomba_L12.Acionamentos": 3,
+                "PLC1.Circuito_L12.fbBomba_L12.Interlock": 3,
                 "PLC1.Circuito_L12.fbBomba_L12.TempoFuncionando": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33564,6 +34125,7 @@
                 "PLC1.Circuito_L2.Lavagem_Circuito02.stStatus": 3,
                 "PLC1.Circuito_L2.ProductoAsociado": 3,
                 "PLC1.Circuito_L2.fbBomba_L2.Acionamentos": 3,
+                "PLC1.Circuito_L2.fbBomba_L2.Interlock": 3,
                 "PLC1.Circuito_L2.fbBomba_L2.TempoFuncionando": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33588,6 +34150,7 @@
                 "PLC1.Circuito_L3.Lavagem_Circuito03.stStatus": 3,
                 "PLC1.Circuito_L3.ProductoAsociado": 3,
                 "PLC1.Circuito_L3.fbBomba_L3.Acionamentos": 3,
+                "PLC1.Circuito_L3.fbBomba_L3.Interlock": 3,
                 "PLC1.Circuito_L3.fbBomba_L3.TempoFuncionando": 3,
                 "PLC1.Circuito_L4.Auxconsumo": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
@@ -33611,6 +34174,7 @@
                 "PLC1.Circuito_L4.Lavagem_Circuito04.stStatus": 3,
                 "PLC1.Circuito_L4.ProductoAsociado": 3,
                 "PLC1.Circuito_L4.fbBomba_L4.Acionamentos": 3,
+                "PLC1.Circuito_L4.fbBomba_L4.Interlock": 3,
                 "PLC1.Circuito_L4.fbBomba_L4.TempoFuncionando": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33630,6 +34194,7 @@
                 "PLC1.Circuito_L5.Lavagem_Circuito05.UltimaLavagem": 3,
                 "PLC1.Circuito_L5.ProductoAsociado": 3,
                 "PLC1.Circuito_L5.fbBomba_L5.Acionamentos": 3,
+                "PLC1.Circuito_L5.fbBomba_L5.Interlock": 3,
                 "PLC1.Circuito_L5.fbBomba_L5.TempoFuncionando": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33649,6 +34214,7 @@
                 "PLC1.Circuito_L6.Lavagem_Circuito06.UltimaLavagem": 3,
                 "PLC1.Circuito_L6.ProductoAsociado": 3,
                 "PLC1.Circuito_L6.fbBomba_L6.Acionamentos": 3,
+                "PLC1.Circuito_L6.fbBomba_L6.Interlock": 3,
                 "PLC1.Circuito_L6.fbBomba_L6.TempoFuncionando": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33668,6 +34234,7 @@
                 "PLC1.Circuito_L7.Lavagem_Circuito07.UltimaLavagem": 3,
                 "PLC1.Circuito_L7.ProductoAsociado": 3,
                 "PLC1.Circuito_L7.fbBomba_L7.Acionamentos": 3,
+                "PLC1.Circuito_L7.fbBomba_L7.Interlock": 3,
                 "PLC1.Circuito_L7.fbBomba_L7.TempoFuncionando": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33687,6 +34254,7 @@
                 "PLC1.Circuito_L8.Lavagem_Circuito08.UltimaLavagem": 3,
                 "PLC1.Circuito_L8.ProductoAsociado": 3,
                 "PLC1.Circuito_L8.fbBomba_L8.Acionamentos": 3,
+                "PLC1.Circuito_L8.fbBomba_L8.Interlock": 3,
                 "PLC1.Circuito_L8.fbBomba_L8.TempoFuncionando": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V1.qntAcionamentos": 3,
@@ -33706,6 +34274,7 @@
                 "PLC1.Circuito_L9.Lavagem_Circuito9.UltimaLavagem": 3,
                 "PLC1.Circuito_L9.ProductoAsociado": 3,
                 "PLC1.Circuito_L9.fbBomba_L9.Acionamentos": 3,
+                "PLC1.Circuito_L9.fbBomba_L9.Interlock": 3,
                 "PLC1.Circuito_L9.fbBomba_L9.TempoFuncionando": 3,
                 "PLC1.ConsumoIBCs.ConsumoDiario.0": 3,
                 "PLC1.ConsumoIBCs.ConsumoDiario.1": 3,
@@ -33775,6 +34344,8 @@
                 "PLC1.DatosProceso.LoteCargado": 3,
                 "PLC1.DatosProceso.NomeLote": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1.Activa_Pos1": 3,
+                "PLC1.Descarga_semilla.PE_B1_V1.Eventos_Parciales": 3,
+                "PLC1.Descarga_semilla.PE_B1_V1.TempoAcionamento": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1.Valv_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B1_V1_CmdAuto_Pos1": 3,
@@ -33793,19 +34364,39 @@
                 "PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1.Cmd_Man_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1.Estado": 3,
+                "PLC1.Descarga_semilla.PE_B2_V1.Eventos_Parciales": 3,
+                "PLC1.Descarga_semilla.PE_B2_V1.TempoAcionamento": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1.Valv_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B2_V1_CmdAuto_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B3_V1.Cmd_Man_Pos2": 3,
+                "PLC1.Descarga_semilla.PE_B3_V1.Eventos_Parciales": 3,
+                "PLC1.Descarga_semilla.PE_B3_V1.TempoAcionamento": 3,
                 "PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos1": 3,
                 "PLC1.Descarga_semilla.PE_B3_V1.Valv_Pos2": 3,
                 "PLC1.Descarga_semilla.PE_B3_V1_CmdAuto_Pos1": 3,
                 "PLC1.Descarga_semilla.fbPE_B_VF1.Acionamentos": 3,
                 "PLC1.Descarga_semilla.fbPE_B_VF1.ResetContadores": 3,
                 "PLC1.Descarga_semilla.fbPE_B_VF1.TempoFuncionando": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.0": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.1": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.2": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.3": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.4": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.Pesada.5": 3,
+                "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.PromMuestra": 3,
                 "PLC1.Dosificador_Polvo_1.PolvoAsociado": 3,
+                "PLC1.Dosificador_Polvo_1.TR_P1_WT1_rValue_REAL": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.0": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.1": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.2": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.3": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.4": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.5": 3,
+                "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.PromMuestra": 3,
                 "PLC1.Dosificador_Polvo_2.PolvoAsociado": 3,
+                "PLC1.Dosificador_Polvo_2.TR_P2_WT1_rValue_REAL": 3,
                 "PLC1.Entradas.CA1_WT1_rValue_REAL": 3,
                 "PLC1.Entradas.CA2_WT1_rValue_REAL": 3,
                 "PLC1.Entradas.CA3_WT1_rValue_REAL": 3,
@@ -34173,6 +34764,7 @@
                 "PLC1.HMI.PU_Lav_V6_Cmd_Man": 3,
                 "PLC1.HMI.PU_Lav_V6_estado": 3,
                 "PLC1.HMI.PararLavagem": 3,
+                "PLC1.HMI.Restart": 3,
                 "PLC1.HMI.StAlarma_PC1_L1_BD": 3,
                 "PLC1.HMI.StAlarma_PC1_L2_BD": 3,
                 "PLC1.HMI.StAlarma_PC1_L3_BD": 3,

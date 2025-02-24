@@ -6918,7 +6918,7 @@
 ]
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea01_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.Circuito_L1.ProductoAsociado%/s%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea01_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="0" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.Circuito_L1.ProductoAsociado%/s%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -6953,7 +6953,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea02_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L2.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea02_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="1" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L2.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -6988,7 +6988,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea03_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L3.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea03_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="2" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L3.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7023,7 +7023,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea04_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="3" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L4.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea04_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="3" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L4.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7058,7 +7058,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea05_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="4" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L5.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea05_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="4" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L5.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7093,7 +7093,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea06_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="5" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L6.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea06_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="5" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L6.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7128,7 +7128,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea07_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="6" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L7.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea07_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="6" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L7.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7163,7 +7163,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea08_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="7" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L8.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea08_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="7" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L8.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7198,7 +7198,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea09_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="8" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L9.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea09_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="8" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L9.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7233,7 +7233,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea10_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="9" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L10.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea10_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="9" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L10.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7268,7 +7268,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea11_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="10" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L11.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea11_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="10" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%f%%s%PLC1.Circuito_L11.ProductoAsociado%/s%%/f%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7303,7 +7303,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea12_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="11" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-text="%f%%s%PLC1.Circuito_L12.ProductoAsociado%/s%%/f%">
+<div id="Textblock_PRODUCTO_linea12_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="11" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150" data-tchmi-text="%f%%s%PLC1.Circuito_L12.ProductoAsociado%/s%%/f%">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7338,7 +7338,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea13_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="12" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.Dosificador_Polvo_1.PolvoAsociado%/s%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea13_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="12" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.Dosificador_Polvo_1.PolvoAsociado%/s%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -7373,7 +7373,7 @@
 }
 </script>
 </div>
-<div id="Textblock_PRODUCTO_linea14_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="13" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.Dosificador_Polvo_2.PolvoAsociado%/s%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Bottom" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
+<div id="Textblock_PRODUCTO_linea14_3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-grid-column-index="1" data-tchmi-grid-row-index="13" data-tchmi-height-unit="px" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-text="%s%PLC1.Dosificador_Polvo_2.PolvoAsociado%/s%" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-bottom="0" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-visibility="Visible" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="150">
 <script data-tchmi-target-attribute="data-tchmi-text-color" type="application/json">
 {
   "color": "rgba(90, 220, 220, 1)"
@@ -11041,7 +11041,7 @@
 }
 </script>
 </div>
-<div id="TcHmiCombobox_67" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="14" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-src-data="%s%PLC1.RecetasGestion.aComboboxRecipes%/s%" data-tchmi-selected-index="" data-tchmi-data-height="40" data-tchmi-max-list-height="600" data-tchmi-allow-text-input="false" data-tchmi-combobox-text="SELECIONAR RECEITA" data-tchmi-text-font-size="25" data-tchmi-selected-id="%s%PLC1.Receitas.IndiceReceita%/s%">
+<div id="TcHmiCombobox_67" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiCombobox" data-tchmi-auto-focus-out="true" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left="14" data-tchmi-left-unit="%" data-tchmi-top="3" data-tchmi-top-unit="%" data-tchmi-width="40" data-tchmi-width-unit="%" data-tchmi-src-data="%s%PLC1.RecetasGestion.aComboboxRecipes%/s%" data-tchmi-selected-index="" data-tchmi-data-height="40" data-tchmi-max-list-height="600" data-tchmi-allow-text-input="false" data-tchmi-combobox-text="%l%SELEC_RECETA%/l%" data-tchmi-text-font-size="25" data-tchmi-selected-id="%s%PLC1.Receitas.IndiceReceita%/s%">
 <script data-tchmi-target-attribute="data-tchmi-content-padding" type="application/json">
 {
   "top": 3,
@@ -11130,29 +11130,15 @@
                 "compare1": {
                   "objectType": "Symbol",
                   "valueType": "tchmi:general#/definitions/STRING(80)",
-                  "symbolExpression": "%s%PLC1.Receta_Activa.SetNombreRecetaActiva%/s%"
+                  "symbolExpression": "%s%PLC1.Receta_Activa.interfaceSetTmrHomogenizado%/s%"
                 },
                 "compare2": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/STRING(80)",
-                  "symbolExpression": "%s%PLC1.Receta_Activa.interfaceSetNombreRecetaActiva%/s%"
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/DINT",
+                  "value": 0
                 },
-                "compareOperator": "==",
+                "compareOperator": "<=",
                 "logic": null
-              },
-              {
-                "compare1": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/STRING(80)",
-                  "symbolExpression": "%s%PLC1.Receta_Activa.SetNombreRecetaActiva%/s%"
-                },
-                "compare2": {
-                  "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
-                  "symbolExpression": "%f%''%/f%"
-                },
-                "compareOperator": "!=",
-                "logic": "AND"
               }
             ],
             "then": [
@@ -11164,7 +11150,7 @@
                   {
                     "objectType": "StaticValue",
                     "valueType": "tchmi:general#/definitions/String",
-                    "value": "NÃO É PERMITIDO ALTERAR A RECEITA CARREGADA"
+                    "value": "AJUSTE O TEMPO DE HOMOGENEIZAÇÃO"
                   }
                 ],
                 "asyncWait": true
@@ -11868,7 +11854,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.Receitas.ReceitaOK%/s%"
                 },
                 "compare2": {
@@ -11890,6 +11876,53 @@
                     "objectType": "StaticValue",
                     "valueType": "tchmi:general#/definitions/String",
                     "value": "VERIFIQUE OS PARÂMETROS DE DOSAGEM"
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "elseif": [
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "symbolExpression": "%s%PLC1.HMI.bRun%/s%"
+                },
+                "compare2": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
+                },
+                "compareOperator": "==",
+                "logic": null
+              },
+              {
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/INT",
+                  "symbolExpression": "%s%PLC1.Receta_Activa.SetNombreRecetaActiva%/s%"
+                },
+                "compare2": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.Receta_Activa.interfaceSetNombreRecetaActiva%/s%"
+                },
+                "compareOperator": "!=",
+                "logic": "AND"
+              }
+            ],
+            "then": [
+              {
+                "objectType": "Function",
+                "active": true,
+                "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                "fnParams": [
+                  {
+                    "objectType": "StaticValue",
+                    "valueType": "tchmi:general#/definitions/String",
+                    "value": "COM A MÁQUINA EM FUNCIONAMENTO, SÓ É PERMITIDO O CARREGAMENTO DA RECEITA ATIVA"
                   }
                 ],
                 "asyncWait": true
@@ -12024,7 +12057,7 @@
               {
                 "compare1": {
                   "objectType": "FunctionExpression",
-                  "functionExpression": "%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%window.confirm(\"Carregar a receita para a máquina?\")%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%"
+                  "functionExpression": "%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%%f%window.confirm(\"Carregar a receita para a máquina?\")%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%%/f%"
                 },
                 "compare2": {
                   "objectType": "StaticValue",
@@ -12130,14 +12163,14 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.HMI.bRun%/s%"
                 },
                 "compare2": {

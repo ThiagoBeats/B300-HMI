@@ -520,13 +520,6 @@
       "keepAlive": false,
       "loadSync": false,
       "preloadBindings": false
-    },
-    {
-      "url": "PANTALLAS/RECETAS/RECETA_ACTIVA.content",
-      "preload": false,
-      "keepAlive": false,
-      "loadSync": false,
-      "preloadBindings": false
     }
   ],
   "views": [
@@ -760,6 +753,12 @@
         "type": "tchmi:general#/definitions/INT",
         "persist": false,
         "readonly": false
+      },
+      "VAR_ResetEMG": {
+        "value": 0,
+        "type": "tchmi:general#/definitions/INT",
+        "persist": false,
+        "readonly": false
       }
     },
     "themedResources": {}
@@ -806,6 +805,7 @@
     }
   ],
   "languages": {
+    "en-US": "Localization/ENGLISH.localization",
     "es-AR": "Localization/ESPAÑOL.localization",
     "pt-BR": "Localization/PORTUGUES.localization"
   },
@@ -874,6 +874,11 @@
         "numeric": "KeyboardLayouts/Numpad (plusminus).keyboard.json"
       },
       "es-AR": {
+        "text": "",
+        "decimal": "",
+        "numeric": ""
+      },
+      "en-US": {
         "text": "",
         "decimal": "",
         "numeric": ""

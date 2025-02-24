@@ -12,7 +12,7 @@
     <HmiTitle>B300S</HmiTitle>
     <HmiVerboseLevel>2</HmiVerboseLevel>
     <HmiVersion>1.0.0.0</HmiVersion>
-    <HmiCommunicationServerPort>3000</HmiCommunicationServerPort>
+    <HmiCommunicationServerPort>3001</HmiCommunicationServerPort>
     <HmiLogTcHmiServerMessages>false</HmiLogTcHmiServerMessages>
     <HmiLogDesignerModeComMessages>false</HmiLogDesignerModeComMessages>
     <HmiServerVersion>Latest</HmiServerVersion>
@@ -40,6 +40,9 @@
   }
 ]</HmiTmcFiles>
     <HmiTimeFormatLocale>pt-BR</HmiTimeFormatLocale>
+    <TcHmi_Beckhoff_TwinCAT_HMI_EcDiagnostics_IncludedInSolution>True</TcHmi_Beckhoff_TwinCAT_HMI_EcDiagnostics_IncludedInSolution>
+    <TcHmi_Beckhoff_TwinCAT_HMI_EcDiagnosticsControl_IncludedInSolution>True</TcHmi_Beckhoff_TwinCAT_HMI_EcDiagnosticsControl_IncludedInSolution>
+    <TcHmi_Beckhoff_TwinCAT_HMI_EcDiagnostics_Meta_IncludedInSolution>True</TcHmi_Beckhoff_TwinCAT_HMI_EcDiagnostics_Meta_IncludedInSolution>
   </PropertyGroup>
   <PropertyGroup>
     <TwinCATHmi_Tasks>$(TcHmiDirectory)\MSBuild\Beckhoff.TwinCAT.HMI.tasks</TwinCATHmi_Tasks>
@@ -127,13 +130,21 @@
     <Content Include="Images\Render LS-B300S-0022.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Localization\ENGLISH.localization">
+      <SubType>Content</SubType>
+      <DependentUpon>Localization\ENGLISH.tpl.localization</DependentUpon>
+    </Content>
+    <Content Include="Localization\ENGLISH.tpl.localization">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Server\ADS\ADS.Config.default.json" />
-    <Content Include="Testes\Garuda and Vishnu.stl">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Testes\Teste.html">
-      <SubType>Content</SubType>
-    </Content>
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.default.json" />
+    <Content Include="Server\ADS\ADS.Config.local.json" />
     <Content Include="Themes\Base\Images\imgteste.jpg">
       <SubType>Content</SubType>
     </Content>
@@ -184,7 +195,6 @@
     <Folder Include="Imports\Videos" />
     <Folder Include="KeyboardLayouts\" />
     <Folder Include="Localization" />
-    <Folder Include="Testes" />
     <Folder Include="UserControls" />
     <Folder Include="PANTALLAS\CLP_CARDS" />
     <Folder Include="PANTALLAS\DADOS_CONSUMO" />
@@ -984,9 +994,6 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="PANTALLAS\RECETAS\RECETA_ACTIVAV02.content">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="PANTALLAS\RECETAS\RECETA_ACTIVA.content">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts JS\Alert2.function.json">

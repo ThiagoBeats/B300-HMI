@@ -4,31 +4,39 @@
     <RecentColors>[
   {
     "counter": 0,
-    "color": "#FF025919"
-  },
-  {
-    "counter": 0,
     "color": "#FF000000"
   },
   {
     "counter": 0,
-    "color": "#FFFDCA03"
+    "color": "#FF583BEC"
   },
   {
     "counter": 0,
-    "color": "#FF707070"
+    "color": "#FF25176C"
   },
   {
     "counter": 0,
-    "color": "#FF194B69"
+    "color": "#FF6C1717"
   },
   {
     "counter": 0,
-    "color": "#FFFFFFFF"
+    "color": "#FFB2B2B2"
   },
   {
     "counter": 0,
-    "color": "#FF13DCC8"
+    "color": "#FF3E0B0B"
+  },
+  {
+    "counter": 0,
+    "color": "#96D7D6D6"
+  },
+  {
+    "counter": 0,
+    "color": "#96000000"
+  },
+  {
+    "counter": 0,
+    "color": "#0F000000"
   },
   {
     "counter": 0,
@@ -36,54 +44,46 @@
   },
   {
     "counter": 0,
-    "color": "#FF04A401"
+    "color": "#FF1632FF"
   },
   {
     "counter": 0,
-    "color": "#32FFFFFF"
+    "color": "#FF343434"
   },
   {
     "counter": 0,
-    "color": "#05FFFFFF"
+    "color": "#32000000"
   },
   {
     "counter": 0,
-    "color": "#64FFFFFF"
+    "color": "#05000000"
   },
   {
     "counter": 0,
-    "color": "#0AFFFFFF"
+    "color": "#FFE2E2E2"
   },
   {
     "counter": 0,
-    "color": "#01FFFFFF"
+    "color": "#FFDCD300"
   },
   {
     "counter": 0,
-    "color": "#28FFFFFF"
+    "color": "#FFA18C7B"
   },
   {
     "counter": 0,
-    "color": "#00FFFFFF"
+    "color": "#FFFD7202"
   },
   {
     "counter": 0,
-    "color": "#14FFFFFF"
+    "color": "#FF731D1D"
   },
   {
     "counter": 0,
-    "color": "#C8FFFFFF"
-  },
-  {
-    "counter": 0,
-    "color": "#FFFBF0F0"
-  },
-  {
-    "counter": 0,
-    "color": "#19000000"
+    "color": "#FFFE0101"
   }
 ]</RecentColors>
-    <TcHmiEditor_SelectBindingWindowDimension>429;232;958;672</TcHmiEditor_SelectBindingWindowDimension>
+    <TcHmiEditor_SelectBindingWindowDimension>466;243;958;672</TcHmiEditor_SelectBindingWindowDimension>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
   547.0,
   50.0,
@@ -263,8 +263,8 @@
     },
     {
       "Path": "PANTALLAS\\POLVOS\\CALIBRACION_POLVOS.content",
-      "DesignAreaSplitSize": "Full",
-      "CodeAreaSplitSize": "Minimized",
+      "DesignAreaSplitSize": "Splitted",
+      "CodeAreaSplitSize": "Splitted",
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
@@ -322,7 +322,7 @@
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",
-      "SplitPercentage": 0.5
+      "SplitPercentage": 0.99464763603925077
     },
     {
       "Path": "PANTALLAS\\PERIFERICOS\\PERIFERICOS.content",
@@ -434,8 +434,35 @@
     },
     {
       "Path": "PANTALLAS\\LIQUIDOS1\\CALIBRACION_LIQ_PC.content",
-      "DesignAreaSplitSize": "Splitted",
-      "CodeAreaSplitSize": "Splitted",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 1.0203094777562862
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L08.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L12.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\LIQUIDOS1\\CALIBRACION_LIQ_PB.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",
       "DesignAreaPosition": "Left",
       "CodeAreaPosition": "Right",

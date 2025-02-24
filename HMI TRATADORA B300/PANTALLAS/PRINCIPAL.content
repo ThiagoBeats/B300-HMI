@@ -4703,7 +4703,7 @@
 ]
 </script>
 </div>
-<div id="ToggleButton_CONSUMO" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="14.5" data-tchmi-height-unit="%" data-tchmi-left="13" data-tchmi-left-unit="%" data-tchmi-text="CONSUMO" data-tchmi-top="84" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
+<div id="ToggleButton_CONSUMO" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="14.5" data-tchmi-height-unit="%" data-tchmi-left="13" data-tchmi-left-unit="%" data-tchmi-text="%l%CONSUMO%/l%" data-tchmi-top="84" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120">
 
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
@@ -4978,7 +4978,7 @@
 </div>
 </div>
 <div id="Container_CONSUMOS" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height-unit="%" data-tchmi-left="12" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-bottom="5" data-tchmi-right="12" data-tchmi-height="80" data-tchmi-visibility="Collapsed" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-creator-visibility="Visible">
-<div id="TcHmiTextblock_1099" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_1%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+<div id="TcHmiTextblock_1099" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_1%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -5120,7 +5120,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1100" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="26" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_2%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+<div id="TcHmiTextblock_1100" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="26" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_2%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -5261,7 +5261,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1101" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="32" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_3%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+<div id="TcHmiTextblock_1101" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="32" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_3%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -5402,7 +5402,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1102" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="38" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_4%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right="51">
+<div id="TcHmiTextblock_1102" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="38" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_4%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -5543,7 +5543,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1103" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="45" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_5%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+<div id="TcHmiTextblock_1103" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="45" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_5%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -5684,7 +5684,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1104" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="51" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_6%/s%.toFixed(0) + &quot; L&quot;
+<div id="TcHmiTextblock_1104" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="51" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_6%/s%.toFixed(1) + &quot; L&quot;
 %/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
@@ -5826,7 +5826,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1105" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="57" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_7%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+<div id="TcHmiTextblock_1105" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="57" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_7%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -5967,7 +5967,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1106" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="63" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_8%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
+<div id="TcHmiTextblock_1106" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="63" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-right="51" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_8%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -6108,7 +6108,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1107" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_9%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
+<div id="TcHmiTextblock_1107" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="20" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_9%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -6249,7 +6249,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1108" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="26" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_10%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
+<div id="TcHmiTextblock_1108" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="26" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_10%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -6390,7 +6390,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1109" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="32" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_11%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
+<div id="TcHmiTextblock_1109" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="32" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_11%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -6531,7 +6531,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1110" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="38" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_12%/s%.toFixed(0) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
+<div id="TcHmiTextblock_1110" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="38" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoCircuito_12%/s%.toFixed(1) + &quot; L&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-left="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -6864,7 +6864,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1115" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoPolvo_1%/s%.toFixed(0) + &quot; g&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right="51">
+<div id="TcHmiTextblock_1115" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoPolvo_1%/s%.toFixed(1) + &quot; g&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,
@@ -7005,7 +7005,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiTextblock_1116" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="76" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoPolvo_2%/s%.toFixed(0) + &quot; g&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right="51">
+<div id="TcHmiTextblock_1116" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="5" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top="76" data-tchmi-top-unit="%" data-tchmi-width="10" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-text="%f%%s%PLC1.DatosProceso.ConsumoPolvo_2%/s%.toFixed(1) + &quot; g&quot;%/f%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="140" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-horizontal-alignment="Center" data-tchmi-right="51">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 1,

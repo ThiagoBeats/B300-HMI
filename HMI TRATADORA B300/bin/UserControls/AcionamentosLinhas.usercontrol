@@ -179,7 +179,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1184" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv1TempoAcionamento%/pp% + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_1184" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv1TempoAcionamento%/pp%.toFixed(1) + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -222,7 +222,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiContainer_59" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="51" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
+<div id="TcHmiContainer_59" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="26.5" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
 <div id="TcHmiTextblock_1185" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="VÁLVULA 2" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="90" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="18">
 
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
@@ -290,7 +290,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1187" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv2TempoAcionamento%/pp% + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_1187" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv2TempoAcionamento%/pp%.toFixed(1) + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -333,7 +333,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiContainer_60" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="75.5" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
+<div id="TcHmiContainer_60" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="51" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
 <div id="TcHmiTextblock_1188" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="VÁLVULA 3" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="90" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="18">
 
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
@@ -401,7 +401,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1190" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv3TempoAcionamento%/pp% + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_1190" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv3TempoAcionamento%/pp%.toFixed(1) + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -444,7 +444,7 @@
 ]
 </script>
 </div>
-<div id="TcHmiContainer_61" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="26.5" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
+<div id="TcHmiContainer_61" data-tchmi-type="TcHmi.Controls.System.TcHmiContainer" data-tchmi-height="30" data-tchmi-height-unit="%" data-tchmi-left="75.5" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="22.5" data-tchmi-width-unit="%" data-tchmi-top="67">
 <div id="TcHmiTextblock_1191" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5" data-tchmi-left-unit="%" data-tchmi-text="VÁLVULA 4" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="90" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size="18">
 
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
@@ -512,7 +512,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1193" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv4TempoAcionamento%/pp% + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_1193" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'COMUTAÇÃO: ' + %pp%Valv4TempoAcionamento%/pp%.toFixed(1) + ' MS'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
@@ -623,7 +623,7 @@
 }
 </script>
 </div>
-<div id="TcHmiTextblock_1196" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'IBC: ' + %pp%ConsumoIBC%/pp% + ' KG'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
+<div id="TcHmiTextblock_1196" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiTextblock" data-tchmi-height="26" data-tchmi-height-unit="px" data-tchmi-left="5.0" data-tchmi-left-unit="%" data-tchmi-text="%f%'IBC: ' + %pp%ConsumoIBC%/pp%.toFixed(1) + ' KG'%/f%" data-tchmi-top="74" data-tchmi-top-unit="px" data-tchmi-width="85" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-text-horizontal-alignment="Left" data-tchmi-text-vertical-alignment="Center">
 <script data-tchmi-target-attribute="data-tchmi-border-width" type="application/json">
 {
   "left": 0,
