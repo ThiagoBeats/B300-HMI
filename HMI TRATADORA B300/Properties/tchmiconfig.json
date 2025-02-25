@@ -119,13 +119,16 @@
   ],
   "userControls": [
     {
+      "url": "UserControls/ConfigLinhas.usercontrol"
+    },
+    {
+      "url": "UserControls/Tratadora.usercontrol"
+    },
+    {
       "url": "UserControls/TratadoraPerifericos.usercontrol"
     },
     {
       "url": "UserControls/AcionamentosLinhas.usercontrol"
-    },
-    {
-      "url": "UserControls/Teste.usercontrol"
     }
   ],
   "content": [
@@ -852,6 +855,10 @@
     {
       "name": "Beckhoff.TwinCAT.HMI.ScopeControl",
       "basePath": "/Beckhoff.TwinCAT.HMI.ScopeControl"
+    },
+    {
+      "name": "JB.TcHmiDynamicPopup",
+      "basePath": "/JB.TcHmiDynamicPopup"
     }
   ],
   "keyboardLayouts": [

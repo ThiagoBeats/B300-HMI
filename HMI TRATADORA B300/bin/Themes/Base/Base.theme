@@ -1,5 +1,21 @@
 {
-  "controlTypeValues": {},
+  "controlTypeValues": {
+    "TcHmi.Controls.Beckhoff.TcHmiKeyboard": {
+      "attributes": {
+        "LabelFontSize": 20.0,
+        "LabelColor": {
+          "color": "rgba(52, 52, 52, 1)"
+        },
+        "KeyBackgroundColor": {
+          "color": "rgba(215, 214, 214, 0.5882352)"
+        },
+        "LabelStrokeColor": {
+          "color": "rgba(0, 0, 0, 1)"
+        }
+      },
+      "themedResources": {}
+    }
+  },
   "controlClassValues": {
     "AnimaMixer": {
       "attributes": {

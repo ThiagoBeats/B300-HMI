@@ -179,6 +179,82 @@
         "asyncWait": true
       }
     ]
+  },
+  {
+    "event": "ToggleButton_CONFIG_LIQ-L01.onPressed",
+    "actions": [
+      {
+        "objectType": "Function",
+        "active": true,
+        "fn": "TcHmi.Functions.JB_TcHmiDynamicPopup.CreatePopup",
+        "fnParams": [
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": "1"
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/TcHmi.Controls.System.TcHmiPopup.TargetFile",
+            "value": {
+              "path": "UserControls/ConfigLinhas.usercontrol",
+              "attributes": {
+                "data-tchmi-vazaonominal": 10.0,
+                "data-tchmi-kp": 20.0,
+                "data-tchmi-ti": 20.0,
+                "data-tchmi-bandamorta": 20.0,
+                "data-tchmi-outmin": 20.0,
+                "data-tchmi-outmax": 20.0,
+                "data-tchmi-pvmin": 20.0,
+                "data-tchmi-pvmax": 20.0,
+                "data-tchmi-circuito": "CONFIGURAÇÃO CIRCUTO 1"
+              }
+            }
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/String",
+            "value": ""
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": true
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Boolean",
+            "value": false
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:framework#/definitions/Id",
+            "value": ""
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 448.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": 495.0
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": ""
+          },
+          {
+            "objectType": "StaticValue",
+            "valueType": "tchmi:general#/definitions/Number",
+            "value": ""
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
   }
 ]
 </script>

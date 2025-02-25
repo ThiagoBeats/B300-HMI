@@ -151,6 +151,20 @@
     <Content Include="Themes\Base\Images\lsbgmaq.png">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="UserControls\ConfigLinhas.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\ConfigLinhas.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\ConfigLinhas.usercontrol</DependentUpon>
+    </Content>
+    <Content Include="UserControls\Tratadora.usercontrol">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UserControls\Tratadora.usercontrol.json">
+      <SubType>Content</SubType>
+      <DependentUpon>UserControls\Tratadora.usercontrol</DependentUpon>
+    </Content>
     <Content Include="UserControls\TratadoraPerifericos.usercontrol">
       <SubType>Content</SubType>
     </Content>
@@ -164,13 +178,6 @@
     <Content Include="UserControls\AcionamentosLinhas.usercontrol.json">
       <SubType>Content</SubType>
       <DependentUpon>UserControls\AcionamentosLinhas.usercontrol</DependentUpon>
-    </Content>
-    <Content Include="UserControls\Teste.usercontrol">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="UserControls\Teste.usercontrol.json">
-      <SubType>Content</SubType>
-      <DependentUpon>UserControls\Teste.usercontrol</DependentUpon>
     </Content>
     <Folder Include="Fonts\" />
     <Folder Include="Images" />

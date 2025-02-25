@@ -4945,7 +4945,7 @@
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/ContentPath",
-          "value": "PANTALLAS/DADOS_CONSUMO/ACIONAMENTOS.content"
+          "value": "PANTALLAS/DADOS_CONSUMO/Grafana.content"
         },
         "asyncWait": true
       },

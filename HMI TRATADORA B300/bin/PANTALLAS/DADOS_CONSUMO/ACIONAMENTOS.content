@@ -41,7 +41,7 @@
 </script>
 <div id="AcionamentosLinhas_1" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/AcionamentosLinhas.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-visibility="Collapsed">
 </div>
-<div id="AcionamentosTratadoras" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/TratadoraPerifericos.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-acionamentosel1="%s%PLC1.Carga_semilla.fbPE_H_VF1.Acionamentos%/s%" data-tchmi-funcionamentoel1="%s%PLC1.Carga_semilla.fbPE_H_VF1.TempoFuncionando%/s%" data-tchmi-acionamentosel2="%s%PLC1.Carga_semilla.fbPE_H_VF2.Acionamentos%/s%" data-tchmi-funcionamentoel2="%s%PLC1.Carga_semilla.fbPE_H_VF2.TempoFuncionando%/s%" data-tchmi-acionamentosel3="%s%PLC1.Descarga_semilla.fbPE_B_VF1.Acionamentos%/s%" data-tchmi-funcionamentoel3="%s%PLC1.Descarga_semilla.fbPE_B_VF1.TempoFuncionando%/s%" data-tchmi-cs1acionamentos="%s%PLC1.Descarga_semilla.PE_B1_V1.Eventos_Parciales%/s%" data-tchmi-cs1comutacao="%s%PLC1.Descarga_semilla.PE_B1_V1.TempoAcionamento%/s%" data-tchmi-cbb1acionamentos="%s%PLC1.Descarga_semilla.PE_B2_V1.Eventos_Parciales%/s%" data-tchmi-cbb1comutacao="%s%PLC1.Descarga_semilla.PE_B2_V1.TempoAcionamento%/s%" data-tchmi-cbb2acionamentos="%s%PLC1.Descarga_semilla.PE_B3_V1.Eventos_Parciales%/s%" data-tchmi-cbb2comutacao="%s%PLC1.Descarga_semilla.PE_B3_V1.TempoAcionamento%/s%" data-tchmi-dtacionamentos="%s%PLC1.Tratadora.TR_S_V1.Eventos_Parciales%/s%" data-tchmi-dtcomutacao="%s%PLC1.Tratadora.TR_S_V1.TempoAbertura%/s%" data-tchmi-dsacionamentos="999" data-tchmi-dscomutacao="999" data-tchmi-dbb1acionamentos="999" data-tchmi-dbb1comutacao="999" data-tchmi-dbb2acionamentos="999" data-tchmi-dbb2comutacao="999" data-tchmi-dcracionamentos="999" data-tchmi-dcrcomutacao="999" data-tchmi-dc30acionamentos="999" data-tchmi-dc30comutacao="999" data-tchmi-reset1="%s%PLC1.Carga_semilla.fbPE_H_VF1.ResetContadores|BindingMode=TwoWay%/s%">
+<div id="AcionamentosTratadoras" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/TratadoraPerifericos.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-acionamentosel1="%f%%s%PLC1.Tratadora.fbHomogenizador.Acionamentos%/s%%/f%" data-tchmi-funcionamentoel1="%f%%s%PLC1.Tratadora.fbHomogenizador.TempoFuncionando%/s%/60%/f%" data-tchmi-acionamentosel2="%s%PLC1.Tratadora.fbAspersor.Acionamentos%/s%" data-tchmi-funcionamentoel2="%s%PLC1.Tratadora.fbAspersor.TempoFuncionando%/s%" data-tchmi-acionamentosel3="%s%PLC1.Tratadora.TR_S_VE1.Acionamentos%/s%" data-tchmi-funcionamentoel3="%s%PLC1.Tratadora.TR_S_VE1.TempoFuncionando%/s%" data-tchmi-cs1acionamentos="%s%PLC1.Balanza_Semilla.TR_S_V2.Eventos_Parciales%/s%" data-tchmi-cs1comutacao="%s%PLC1.Balanza_Semilla.TR_S_V2.TempoAbertura%/s%" data-tchmi-cbb1acionamentos="9" data-tchmi-cbb1comutacao="10" data-tchmi-cbb2acionamentos="11" data-tchmi-cbb2comutacao="12" data-tchmi-dtacionamentos="%s%PLC1.Balanza_Semilla.TR_S_V3.Eventos_Parciales%/s%" data-tchmi-dtcomutacao="%s%PLC1.Balanza_Semilla.TR_S_V3.TempoAbertura%/s%" data-tchmi-dsacionamentos="999" data-tchmi-dscomutacao="999" data-tchmi-dbb1acionamentos="999" data-tchmi-dbb1comutacao="999" data-tchmi-dbb2acionamentos="999" data-tchmi-dbb2comutacao="999" data-tchmi-dcracionamentos="999" data-tchmi-dcrcomutacao="999" data-tchmi-dc30acionamentos="999" data-tchmi-dc30comutacao="999" data-tchmi-reset1="%s%PLC1.Carga_semilla.fbPE_H_VF1.ResetContadores|BindingMode=TwoWay%/s%">
 
 <script data-tchmi-target-attribute="data-tchmi-resets" type="application/json">
 [
@@ -60,8 +60,10 @@
 ]
 </script>
 </div>
+<div id="AcionamentosTratadora" data-tchmi-type="TcHmi.Controls.System.TcHmiUserControlHost" data-tchmi-height="100" data-tchmi-height-unit="%" data-tchmi-left="0" data-tchmi-left-unit="px" data-tchmi-target-user-control="UserControls/Tratadora.usercontrol" data-tchmi-top="0" data-tchmi-top-unit="px" data-tchmi-width="100" data-tchmi-width-unit="%" data-tchmi-visibility="Collapsed">
 </div>
-<div id="btLinha1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 1" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="18.5">
+</div>
+<div id="btLinha1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 1&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="18.5">
 
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
@@ -327,6 +329,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   }
@@ -362,7 +463,7 @@
 }
 </script>
 </div>
-<div id="btLinha2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 2" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="24.3">
+<div id="btLinha2" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 2&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="24.3">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -647,13 +748,112 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   }
 ]
 </script>
 </div>
-<div id="btLinha8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 8" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="59.1">
+<div id="btLinha8" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 8&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="59.1">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -845,6 +1045,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -942,7 +1241,7 @@
 }
 </script>
 </div>
-<div id="btLinha7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 7" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="53.3">
+<div id="btLinha7" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 7&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="53.3">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -1134,6 +1433,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -1231,7 +1629,7 @@
 }
 </script>
 </div>
-<div id="btLinha6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 6" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="47.5">
+<div id="btLinha6" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 6&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="47.5">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -1423,6 +1821,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -1520,7 +2017,7 @@
 }
 </script>
 </div>
-<div id="btLinha5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 5" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="41.7">
+<div id="btLinha5" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 5&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="41.7">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -1805,13 +2302,112 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   }
 ]
 </script>
 </div>
-<div id="btLinha4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 4" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="35.9">
+<div id="btLinha4" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 4&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="35.9">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -2096,13 +2692,112 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   }
 ]
 </script>
 </div>
-<div id="btLinha3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 3" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="30.1">
+<div id="btLinha3" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 3&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="30.1">
 
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
@@ -2387,13 +3082,112 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   }
 ]
 </script>
 </div>
-<div id="btLinha9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 9" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="64.9">
+<div id="btLinha9" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 9&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="64.9">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -2585,6 +3379,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -2682,7 +3575,7 @@
 }
 </script>
 </div>
-<div id="btLinha10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 10" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="70.7">
+<div id="btLinha10" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 10&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="70.7">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -2874,6 +3767,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -2971,7 +3963,7 @@
 }
 </script>
 </div>
-<div id="btLinha11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 11" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="76.5">
+<div id="btLinha11" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 11&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="76.5">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -3163,6 +4155,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -3260,7 +4351,7 @@
 }
 </script>
 </div>
-<div id="btLinha12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="LINHA 12" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="82.3">
+<div id="btLinha12" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%f%%l%LINEA%/l% + &quot; 12&quot;%/f%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="82.3">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -3452,6 +4543,105 @@
           "value": "Collapsed"
         },
         "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv1_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv2_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv3__Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Abertura%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes.1%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Valv4_Fechamento%/ctrl%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes.0%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
       }
     ]
   },
@@ -3549,7 +4739,7 @@
 }
 </script>
 </div>
-<div id="btTratadora" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="TRATADORA" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="88.1">
+<div id="btTratadora" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="5.8" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%l%TRATAMIENTO%/l%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="88.1">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -3563,6 +4753,39 @@
           "objectType": "StaticValue",
           "valueType": "tchmi:general#/definitions/INT",
           "value": 13
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosLinhas_1::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadoras::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Visible"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
         },
         "asyncWait": true
       }
@@ -3662,7 +4885,7 @@
 }
 </script>
 </div>
-<div id="btPerif" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="PERIFÉRICOS" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="93.9">
+<div id="btPerif" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="6" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-text="%l%PERIFERICOS%/l%" data-tchmi-top-unit="%" data-tchmi-width="100" data-tchmi-width-unit="px" data-tchmi-word-wrap="true" data-tchmi-right="0" data-tchmi-top="93.9">
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
@@ -3694,6 +4917,17 @@
         "objectType": "WriteToSymbol",
         "active": true,
         "symbolExpression": "%ctrl%AcionamentosTratadoras::Visibility%/ctrl%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:framework#/definitions/Visibility",
+          "value": "Collapsed"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%ctrl%AcionamentosTratadora::Visibility%/ctrl%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:framework#/definitions/Visibility",

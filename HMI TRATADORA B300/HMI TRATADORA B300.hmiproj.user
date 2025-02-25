@@ -4,7 +4,67 @@
     <RecentColors>[
   {
     "counter": 0,
+    "color": "#FF194B69"
+  },
+  {
+    "counter": 0,
     "color": "#FF000000"
+  },
+  {
+    "counter": 0,
+    "color": "#FF5E7501"
+  },
+  {
+    "counter": 0,
+    "color": "#FFFFFFFF"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEDEAEA"
+  },
+  {
+    "counter": 0,
+    "color": "#FFEFEF22"
+  },
+  {
+    "counter": 0,
+    "color": "#FF34380D"
+  },
+  {
+    "counter": 0,
+    "color": "#FF626720"
+  },
+  {
+    "counter": 0,
+    "color": "#FFC8F808"
+  },
+  {
+    "counter": 0,
+    "color": "#FFE6C62C"
+  },
+  {
+    "counter": 0,
+    "color": "#FF014505"
+  },
+  {
+    "counter": 0,
+    "color": "#FF006206"
+  },
+  {
+    "counter": 0,
+    "color": "#FF00AA0A"
+  },
+  {
+    "counter": 0,
+    "color": "#FF004C04"
+  },
+  {
+    "counter": 0,
+    "color": "#FF5ADC02"
+  },
+  {
+    "counter": 0,
+    "color": "#FF13DCC8"
   },
   {
     "counter": 0,
@@ -21,69 +81,9 @@
   {
     "counter": 0,
     "color": "#FFB2B2B2"
-  },
-  {
-    "counter": 0,
-    "color": "#FF3E0B0B"
-  },
-  {
-    "counter": 0,
-    "color": "#96D7D6D6"
-  },
-  {
-    "counter": 0,
-    "color": "#96000000"
-  },
-  {
-    "counter": 0,
-    "color": "#0F000000"
-  },
-  {
-    "counter": 0,
-    "color": "#00000000"
-  },
-  {
-    "counter": 0,
-    "color": "#FF1632FF"
-  },
-  {
-    "counter": 0,
-    "color": "#FF343434"
-  },
-  {
-    "counter": 0,
-    "color": "#32000000"
-  },
-  {
-    "counter": 0,
-    "color": "#05000000"
-  },
-  {
-    "counter": 0,
-    "color": "#FFE2E2E2"
-  },
-  {
-    "counter": 0,
-    "color": "#FFDCD300"
-  },
-  {
-    "counter": 0,
-    "color": "#FFA18C7B"
-  },
-  {
-    "counter": 0,
-    "color": "#FFFD7202"
-  },
-  {
-    "counter": 0,
-    "color": "#FF731D1D"
-  },
-  {
-    "counter": 0,
-    "color": "#FFFE0101"
   }
 ]</RecentColors>
-    <TcHmiEditor_SelectBindingWindowDimension>466;243;958;672</TcHmiEditor_SelectBindingWindowDimension>
+    <TcHmiEditor_SelectBindingWindowDimension>620;262;958;672</TcHmiEditor_SelectBindingWindowDimension>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolMappedTree>[
   547.0,
   50.0,
@@ -95,7 +95,7 @@
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>[
   280.0,
   300.0,
-  298.0
+  318.0
 ]</TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolServerTree>
     <TcHmiEditor_SelectBindingWindowColumnWidths_m_SymbolInternalTree>[
   300.0,
@@ -397,15 +397,6 @@
       "SplitPercentage": 0.5
     },
     {
-      "Path": "UserControls\\Teste.usercontrol",
-      "DesignAreaSplitSize": "Full",
-      "CodeAreaSplitSize": "Minimized",
-      "Orientation": "Horizontal",
-      "DesignAreaPosition": "Left",
-      "CodeAreaPosition": "Right",
-      "SplitPercentage": 0.5
-    },
-    {
       "Path": "PANTALLAS\\LIQUIDOS1\\LIQUIDOS_L10.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
@@ -461,6 +452,24 @@
     },
     {
       "Path": "PANTALLAS\\LIQUIDOS1\\CALIBRACION_LIQ_PB.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\POLVOS\\CALIBRACION_POLVO_2.content",
+      "DesignAreaSplitSize": "Full",
+      "CodeAreaSplitSize": "Minimized",
+      "Orientation": "Horizontal",
+      "DesignAreaPosition": "Left",
+      "CodeAreaPosition": "Right",
+      "SplitPercentage": 0.5
+    },
+    {
+      "Path": "PANTALLAS\\CONFIG\\CONFIG_140_FABRICA.content",
       "DesignAreaSplitSize": "Full",
       "CodeAreaSplitSize": "Minimized",
       "Orientation": "Horizontal",

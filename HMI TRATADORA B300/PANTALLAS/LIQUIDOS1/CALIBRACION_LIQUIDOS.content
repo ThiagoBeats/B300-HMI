@@ -6294,5 +6294,338 @@
 ]
 </script>
 </div>
+
+<script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
+[
+  {
+    "event": "Container_CALIBRA_LIQUIDOS_1_2_3_4.onAttached",
+    "actions": [
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMICA1.Peso_calibracion|BindingMode=TwoWay%/s%",
+        "value": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/String",
+          "symbolExpression": "%s%PLC1.HMI.bSet_pesoSemilla%/s%"
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "SwitchCase",
+        "active": true,
+        "compare": {
+          "objectType": "Symbol",
+          "valueType": "tchmi:general#/definitions/INT",
+          "symbolExpression": "%s%PLC1.HMI.iCircuito_a_calibrar%/s%"
+        },
+        "cases": [
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 1
+            },
+            "actions": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.0.Paso%/s%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "value": 0
+                        },
+                        "compareOperator": ">",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.Dosis_calibracion|BindingMode=TwoWay%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.0.Dosis%/s%"
+                        },
+                        "asyncWait": true
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.TInyeccion_calibracion%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.0.Inyeccion%/s%"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "Function",
+                        "active": true,
+                        "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                        "fnParams": [
+                          {
+                            "objectType": "Symbol",
+                            "valueType": "tchmi:general#/definitions/String",
+                            "symbolExpression": "%l%LIQ_FORA_REC%/l%"
+                          }
+                        ],
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 2
+            },
+            "actions": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.1.Paso%/s%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "value": 0
+                        },
+                        "compareOperator": ">",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.Dosis_calibracion|BindingMode=TwoWay%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.1.Dosis%/s%"
+                        },
+                        "asyncWait": true
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.TInyeccion_calibracion%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.1.Inyeccion%/s%"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "Function",
+                        "active": true,
+                        "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                        "fnParams": [
+                          {
+                            "objectType": "Symbol",
+                            "valueType": "tchmi:general#/definitions/String",
+                            "symbolExpression": "%l%LIQ_FORA_REC%/l%"
+                          }
+                        ],
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 3
+            },
+            "actions": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.2.Paso%/s%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "value": 0
+                        },
+                        "compareOperator": ">",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.Dosis_calibracion|BindingMode=TwoWay%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.2.Dosis%/s%"
+                        },
+                        "asyncWait": true
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.TInyeccion_calibracion%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.2.Inyeccion%/s%"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "Function",
+                        "active": true,
+                        "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                        "fnParams": [
+                          {
+                            "objectType": "Symbol",
+                            "valueType": "tchmi:general#/definitions/String",
+                            "symbolExpression": "%l%LIQ_FORA_REC%/l%"
+                          }
+                        ],
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "caseValue": {
+              "objectType": "StaticValue",
+              "valueType": "tchmi:general#/definitions/INT",
+              "value": 4
+            },
+            "actions": [
+              {
+                "objectType": "Condition",
+                "active": true,
+                "parts": [
+                  {
+                    "if": [
+                      {
+                        "compare1": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.3.Paso%/s%"
+                        },
+                        "compare2": {
+                          "objectType": "StaticValue",
+                          "valueType": "tchmi:general#/definitions/INT",
+                          "value": 0
+                        },
+                        "compareOperator": ">",
+                        "logic": null
+                      }
+                    ],
+                    "then": [
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.Dosis_calibracion|BindingMode=TwoWay%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.3.Dosis%/s%"
+                        },
+                        "asyncWait": true
+                      },
+                      {
+                        "objectType": "WriteToSymbol",
+                        "active": true,
+                        "symbolExpression": "%s%PLC1.HMICA1.TInyeccion_calibracion%/s%",
+                        "value": {
+                          "objectType": "Symbol",
+                          "valueType": "tchmi:general#/definitions/String",
+                          "symbolExpression": "%s%PLC1.Receta_Activa.SetCircuitosLiq.3.Inyeccion%/s%"
+                        },
+                        "asyncWait": true
+                      }
+                    ]
+                  },
+                  {
+                    "else": [
+                      {
+                        "objectType": "Function",
+                        "active": true,
+                        "fn": "TcHmi.Functions.HMI_TRATADORA_B300.Alert2",
+                        "fnParams": [
+                          {
+                            "objectType": "Symbol",
+                            "valueType": "tchmi:general#/definitions/String",
+                            "symbolExpression": "%l%LIQ_FORA_REC%/l%"
+                          }
+                        ],
+                        "asyncWait": true
+                      }
+                    ]
+                  }
+                ],
+                "asyncWait": true
+              }
+            ]
+          }
+        ],
+        "asyncWait": true
+      }
+    ]
+  }
+]
+</script>
 </div>
 </div>

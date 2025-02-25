@@ -1722,7 +1722,7 @@
 </div>
 <div id="Image_PERIFERICOS_CAIXAS" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiImage" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width-unit="%" data-tchmi-right-unit="%" data-tchmi-bottom-unit="%" data-tchmi-background-image-height-unit="%" data-tchmi-background-image-width-unit="%" data-tchmi-background-image-width="90" data-tchmi-background-image="Images/PERIFERICOS/PERIFERICOS CAIXAS.png" data-tchmi-height="100" data-tchmi-width="100" data-tchmi-left="0" data-tchmi-top="0">
 </div>
-<div id="ToggleButton_TOLVA_BIGBAG" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="7" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="14" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-bottom="55.9" data-tchmi-right-unit="%" data-tchmi-right="8.2" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-toggle-state="Normal" data-tchmi-toggle-group="TOLVA_EMBOLSE" data-tchmi-text="BIG BAG" data-tchmi-state-symbol="%s%PLC1.HMI.PE_B_SelectorBigBag%/s%">
+<div id="ToggleButton_TOLVA_BIGBAG" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="7" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="14" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-bottom="55.9" data-tchmi-right-unit="%" data-tchmi-right="8.2" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-toggle-state="Normal" data-tchmi-toggle-group="TOLVA_EMBOLSE" data-tchmi-text="BIG BAG">
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
   "left": "Solid",
@@ -1789,82 +1789,57 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "ToggleButton_TOLVA_BIGBAG.onToggleStateChanged",
+    "event": "ToggleButton_TOLVA_BIGBAG.onPressed",
     "actions": [
       {
-        "objectType": "SwitchCase",
+        "objectType": "WriteToSymbol",
         "active": true,
-        "compare": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:framework#/definitions/ToggleState",
-          "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::ToggleState%/ctrl%"
+        "symbolExpression": "%s%PLC1.HMI.PE_B_SelectorBigBag%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
         },
-        "cases": [
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMI.PE_B_SelectorBolsas%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": false
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.HMI.PE_B_SelectorBigBag%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
           {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "actions": [
+            "if": [
               {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::BorderColor%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Color",
-                  "value": {
-                    "color": "rgba(25, 75, 105, 1)"
-                  }
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.HMI.PE_B_SelectorBigBag%/s%"
                 },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::TextColor%/ctrl%",
-                "value": {
+                "compare2": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/SolidColor",
-                  "value": {
-                    "color": "rgba(25, 75, 105, 1)"
-                  }
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
                 },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::BackgroundColor%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Color",
-                  "value": {
-                    "angle": 90.0,
-                    "stopPoints": [
-                      {
-                        "color": "rgba(0, 0, 0, 1)",
-                        "stop": "0%"
-                      },
-                      {
-                        "color": "rgba(25, 75, 105, 1)",
-                        "stop": "100%"
-                      }
-                    ]
-                  }
-                },
-                "asyncWait": true
+                "compareOperator": "==",
+                "logic": null
               }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "actions": [
+            ],
+            "then": [
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
@@ -1907,6 +1882,59 @@
                       },
                       {
                         "color": "rgba(10, 170, 9, 1)",
+                        "stop": "100%"
+                      }
+                    ]
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::BorderColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(25, 75, 105, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(25, 75, 105, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BIGBAG::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 90.0,
+                    "stopPoints": [
+                      {
+                        "color": "rgba(0, 0, 0, 1)",
+                        "stop": "0%"
+                      },
+                      {
+                        "color": "rgba(25, 75, 105, 1)",
                         "stop": "100%"
                       }
                     ]
@@ -1924,7 +1952,7 @@
 ]
 </script>
 </div>
-<div id="ToggleButton_TOLVA_BOLSA" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="7" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-bottom="55.9" data-tchmi-right-unit="%" data-tchmi-right="24.8" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-toggle-state="Normal" data-tchmi-toggle-group="TOLVA_EMBOLSE" data-tchmi-text="%l%BOLSA%/l%" data-tchmi-state-symbol="%s%PLC1.HMI.PE_B_SelectorBolsas%/s%" data-tchmi-is-enabled="true">
+<div id="ToggleButton_TOLVA_BOLSA" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiToggleButton" data-tchmi-height="7" data-tchmi-height-unit="%" data-tchmi-left-unit="%" data-tchmi-top-unit="%" data-tchmi-width="8" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-bottom="55.9" data-tchmi-right-unit="%" data-tchmi-right="24.8" data-tchmi-text-horizontal-alignment="Center" data-tchmi-text-vertical-alignment="Center" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="180" data-tchmi-toggle-state="Normal" data-tchmi-toggle-group="TOLVA_EMBOLSE" data-tchmi-text="%l%BOLSA%/l%" data-tchmi-is-enabled="true">
 <script data-tchmi-target-attribute="data-tchmi-border-style" type="application/json">
 {
   "left": "Solid",
@@ -1991,82 +2019,57 @@
 <script data-tchmi-target-attribute="data-tchmi-trigger" type="application/json">
 [
   {
-    "event": "ToggleButton_TOLVA_BOLSA.onToggleStateChanged",
+    "event": "ToggleButton_TOLVA_BOLSA.onPressed",
     "actions": [
       {
-        "objectType": "SwitchCase",
+        "objectType": "WriteToSymbol",
         "active": true,
-        "compare": {
-          "objectType": "Symbol",
-          "valueType": "tchmi:framework#/definitions/ToggleState",
-          "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::ToggleState%/ctrl%"
+        "symbolExpression": "%s%PLC1.HMI.PE_B_SelectorBigBag%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": false
         },
-        "cases": [
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMI.PE_B_SelectorBolsas%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      }
+    ]
+  },
+  {
+    "event": "%s%PLC1.HMI.PE_B_SelectorBolsas%/s%",
+    "actions": [
+      {
+        "objectType": "Condition",
+        "active": true,
+        "parts": [
           {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Normal"
-            },
-            "actions": [
+            "if": [
               {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::BorderColor%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Color",
-                  "value": {
-                    "color": "rgba(25, 75, 105, 1)"
-                  }
+                "compare1": {
+                  "objectType": "Symbol",
+                  "valueType": "tchmi:general#/definitions/String",
+                  "symbolExpression": "%s%PLC1.HMI.PE_B_SelectorBolsas%/s%"
                 },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::TextColor%/ctrl%",
-                "value": {
+                "compare2": {
                   "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/SolidColor",
-                  "value": {
-                    "color": "rgba(25, 75, 105, 1)"
-                  }
+                  "valueType": "tchmi:general#/definitions/BOOL",
+                  "value": true
                 },
-                "asyncWait": true
-              },
-              {
-                "objectType": "WriteToSymbol",
-                "active": true,
-                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::BackgroundColor%/ctrl%",
-                "value": {
-                  "objectType": "StaticValue",
-                  "valueType": "tchmi:framework#/definitions/Color",
-                  "value": {
-                    "angle": 90.0,
-                    "stopPoints": [
-                      {
-                        "color": "rgba(0, 0, 0, 1)",
-                        "stop": "0%"
-                      },
-                      {
-                        "color": "rgba(25, 75, 105, 1)",
-                        "stop": "100%"
-                      }
-                    ]
-                  }
-                },
-                "asyncWait": true
+                "compareOperator": "==",
+                "logic": null
               }
-            ]
-          },
-          {
-            "caseValue": {
-              "objectType": "StaticValue",
-              "valueType": "tchmi:framework#/definitions/ToggleState",
-              "value": "Active"
-            },
-            "actions": [
+            ],
+            "then": [
               {
                 "objectType": "WriteToSymbol",
                 "active": true,
@@ -2109,6 +2112,59 @@
                       },
                       {
                         "color": "rgba(10, 170, 9, 1)",
+                        "stop": "100%"
+                      }
+                    ]
+                  }
+                },
+                "asyncWait": true
+              }
+            ]
+          },
+          {
+            "else": [
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::BorderColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "color": "rgba(25, 75, 105, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::TextColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/SolidColor",
+                  "value": {
+                    "color": "rgba(25, 75, 105, 1)"
+                  }
+                },
+                "asyncWait": true
+              },
+              {
+                "objectType": "WriteToSymbol",
+                "active": true,
+                "symbolExpression": "%ctrl%ToggleButton_TOLVA_BOLSA::BackgroundColor%/ctrl%",
+                "value": {
+                  "objectType": "StaticValue",
+                  "valueType": "tchmi:framework#/definitions/Color",
+                  "value": {
+                    "angle": 90.0,
+                    "stopPoints": [
+                      {
+                        "color": "rgba(0, 0, 0, 1)",
+                        "stop": "0%"
+                      },
+                      {
+                        "color": "rgba(25, 75, 105, 1)",
                         "stop": "100%"
                       }
                     ]

@@ -46,6 +46,15 @@
             "startOffset": 1,
             "type": "array"
         },
+        "PLC1.ARRAY_1..10_OF-DINT": {
+            "items": {
+                "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "maxItems": 10,
+            "minItems": 10,
+            "startOffset": 1,
+            "type": "array"
+        },
         "PLC1.ARRAY_1..10_OF-stListado_Polvos": {
             "items": {
                 "$ref": "#/definitions/PLC1.stListado_Polvos"
@@ -79,6 +88,15 @@
             },
             "maxItems": 200,
             "minItems": 200,
+            "startOffset": 1,
+            "type": "array"
+        },
+        "PLC1.ARRAY_1..2_OF-REAL": {
+            "items": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "maxItems": 2,
+            "minItems": 2,
             "startOffset": 1,
             "type": "array"
         },
@@ -3394,6 +3412,16 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Alarmas.Ac_alarma": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Alarmas::Ac_alarma",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Alarmas.AlarmesMaquina": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -3462,6 +3490,110 @@
             "MAPPING": "PLC1::Balanza_Semilla::FinCarga",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/BOOL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.TR_S_V2.Eventos_Parciales": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TR_S_V2::Eventos_Parciales",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.TR_S_V2.Reset_Eventos": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TR_S_V2::Reset_Eventos",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 13
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.TR_S_V2.TempoAbertura": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TR_S_V2::TempoAbertura",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Tempo que a válvula demora para abrir",
+                        "propertyOrder": 17
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.TR_S_V3.Eventos_Parciales": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TR_S_V3::Eventos_Parciales",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.TR_S_V3.Reset_Eventos": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TR_S_V3::Reset_Eventos",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 13
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Balanza_Semilla.TR_S_V3.TempoAbertura": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Balanza_Semilla::TR_S_V3::TempoAbertura",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/DINT"
+                    },
+                    {
+                        "comment": "Tempo que a válvula demora para abrir",
+                        "propertyOrder": 17
+                    }
+                ]
             },
             "USEMAPPING": true
         },
@@ -4865,6 +4997,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L1.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -4889,6 +5041,26 @@
             "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -4919,6 +5091,26 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L1.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -4943,6 +5135,26 @@
             "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L1::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5231,6 +5443,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L10.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5255,6 +5505,44 @@
             "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5285,6 +5573,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L10.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5309,6 +5635,44 @@
             "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L10::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5546,6 +5910,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L11.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5570,6 +5972,44 @@
             "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5600,6 +6040,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L11.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5624,6 +6102,44 @@
             "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L11::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5861,6 +6377,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L12.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5885,6 +6439,44 @@
             "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -5915,6 +6507,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L12.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -5939,6 +6569,44 @@
             "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L12::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -6176,6 +6844,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L2.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6200,6 +6906,26 @@
             "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -6230,6 +6956,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L2.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6254,6 +7018,44 @@
             "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L2::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -6508,6 +7310,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L3.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6532,6 +7372,44 @@
             "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -6562,6 +7440,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L3.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6586,6 +7502,44 @@
             "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L3::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -6920,6 +7874,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L4.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6944,6 +7936,44 @@
             "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -6974,6 +8004,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L4.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -6998,6 +8066,44 @@
             "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L4::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -7288,6 +8394,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L5.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7312,6 +8456,44 @@
             "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -7342,6 +8524,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L5.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7366,6 +8586,44 @@
             "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L5::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -7603,6 +8861,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L6.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7630,6 +8926,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L6.ControlValv_ioLink_V2.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7647,6 +8981,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V3.TemposAcionamento": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V3::TemposAcionamento",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..10_OF-DINT"
+                    },
+                    {
+                        "comment": "Array com os últimos tempos de acionamento",
+                        "propertyOrder": 9
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L6.ControlValv_ioLink_V3.TemposAcionamento.9": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7654,6 +9006,26 @@
             "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V3::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -7681,6 +9053,44 @@
             "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L6::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -7918,6 +9328,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L7.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7942,6 +9390,44 @@
             "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -7972,6 +9458,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L7.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -7996,6 +9520,44 @@
             "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L7::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -8233,6 +9795,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L8.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -8257,6 +9857,44 @@
             "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -8287,6 +9925,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L8.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -8311,6 +9987,44 @@
             "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L8::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -8548,6 +10262,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V1::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V1::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V1::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L9.ControlValv_ioLink_V1.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -8572,6 +10324,44 @@
             "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V2::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V2::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V2::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V2::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -8602,6 +10392,44 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V3::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V3::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V3::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Circuito_L9.ControlValv_ioLink_V3.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -8626,6 +10454,44 @@
             "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V4::TemposAcionamento[9]",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/DINT"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V4::UltimasPosicoes",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.ARRAY_1..2_OF-REAL"
+                    },
+                    {
+                        "comment": "Esse array salva as últimas posições de abertura e fechamento [1] - Abertura, [2] - Fechamento",
+                        "propertyOrder": 20
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V4::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Circuito_L9::ControlValv_ioLink_V4::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -10311,6 +12177,23 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Dosificador_Polvo_1.UltimaCalibracao": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_1::UltimaCalibracao",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Data da ultima calibração feita com sucesso"
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.0": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -10405,6 +12288,23 @@
             "MAPPING": "PLC1::Dosificador_Polvo_2::TR_P2_WT1_rValue_REAL",
             "SCHEMA": {
                 "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Dosificador_Polvo_2.UltimaCalibracao": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Dosificador_Polvo_2::UltimaCalibracao",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Data da ultima calibração feita com sucesso"
+                    }
+                ]
             },
             "USEMAPPING": true
         },
@@ -27217,6 +29117,24 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Tratadora.TR_S_VE1.Acionamentos": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::TR_S_VE1::Acionamentos",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Quantidade de vezes que o motor foi acionado",
+                        "propertyOrder": 21
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Tratadora.TR_S_VE1.Cmd_Man": {
             "ACCESS": 3,
             "CUSTOMERDATA": "",
@@ -27255,6 +29173,167 @@
             },
             "USEMAPPING": true
         },
+        "PLC1.Tratadora.TR_S_VE1.Reset_Horas": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::TR_S_VE1::Reset_Horas",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:server#/definitions/PLC1.REFERENCE-TO-BOOL"
+                    },
+                    {
+                        "propertyOrder": 17
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.TR_S_VE1.TempoFuncionando": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::TR_S_VE1::TempoFuncionando",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Tempo de funcionamento do motor",
+                        "propertyOrder": 22
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.fbAspersor.Acionamentos": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::fbAspersor::Acionamentos",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Quantidade de acionamentos do motor",
+                        "propertyOrder": 19
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.fbAspersor.ResetContadores": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::fbAspersor::ResetContadores",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 22
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.fbAspersor.TempoFuncionando": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::fbAspersor::TempoFuncionando",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Tempo de funcionamento do motor",
+                        "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.fbHomogenizador.Acionamentos": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::fbHomogenizador::Acionamentos",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Quantidade de acionamentos do motor",
+                        "propertyOrder": 19
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.fbHomogenizador.ResetContadores": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::fbHomogenizador::ResetContadores",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/BOOL"
+                    },
+                    {
+                        "propertyOrder": 22
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Tratadora.fbHomogenizador.TempoFuncionando": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Tratadora::fbHomogenizador::TempoFuncionando",
+            "SCHEMA": {
+                "allOf": [
+                    {
+                        "$ref": "tchmi:general#/definitions/UDINT"
+                    },
+                    {
+                        "comment": "Tempo de funcionamento do motor",
+                        "propertyOrder": 18
+                    }
+                ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Valvulas_Lavado.ControlValv_ioLink_V5.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Valvulas_Lavado::ControlValv_ioLink_V5::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Valvulas_Lavado.ControlValv_ioLink_V5.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Valvulas_Lavado::ControlValv_ioLink_V5::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
         "PLC1.Valvulas_Lavado.ControlValv_ioLink_V5.qntAcionamentos": {
             "ACCESS": 3,
             "DOMAIN": "ADS",
@@ -27269,6 +29348,26 @@
                         "propertyOrder": 14
                     }
                 ]
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Valvulas_Lavado.ControlValv_ioLink_V6.UltimasPosicoes.0": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Valvulas_Lavado::ControlValv_ioLink_V6::UltimasPosicoes[0]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
+            },
+            "USEMAPPING": true
+        },
+        "PLC1.Valvulas_Lavado.ControlValv_ioLink_V6.UltimasPosicoes.1": {
+            "ACCESS": 3,
+            "DOMAIN": "ADS",
+            "DYNAMIC": true,
+            "MAPPING": "PLC1::Valvulas_Lavado::ControlValv_ioLink_V6::UltimasPosicoes[1]",
+            "SCHEMA": {
+                "$ref": "tchmi:general#/definitions/REAL"
             },
             "USEMAPPING": true
         },
@@ -33885,11 +35984,18 @@
                 "PLC1.Agitadores.PP3_L11_AG.Marcha_Equipo": 3,
                 "PLC1.Agitadores.PP3_L12_AG.Marcha_Equipo": 3,
                 "PLC1.Agitadores.PP3_L9_AG.Marcha_Equipo": 3,
+                "PLC1.Alarmas.Ac_alarma": 3,
                 "PLC1.Alarmas.AlarmesMaquina": 3,
                 "PLC1.AlarmesDaMaquina.AlrLL": 3,
                 "PLC1.AlarmesDaMaquina.Confirmar": 3,
                 "PLC1.Balanza_Semilla.EsvaziarCaixa": 3,
                 "PLC1.Balanza_Semilla.FinCarga": 3,
+                "PLC1.Balanza_Semilla.TR_S_V2.Eventos_Parciales": 3,
+                "PLC1.Balanza_Semilla.TR_S_V2.Reset_Eventos": 3,
+                "PLC1.Balanza_Semilla.TR_S_V2.TempoAbertura": 3,
+                "PLC1.Balanza_Semilla.TR_S_V3.Eventos_Parciales": 3,
+                "PLC1.Balanza_Semilla.TR_S_V3.Reset_Eventos": 3,
+                "PLC1.Balanza_Semilla.TR_S_V3.TempoAbertura": 3,
                 "PLC1.BancoDeDados.ComandoSalvar": 3,
                 "PLC1.BancoDeDados.ComandoSalvar.0": 3,
                 "PLC1.BancoDeDados.ComandoSalvar.1": 3,
@@ -34024,12 +36130,20 @@
                 "PLC1.Carga_semilla.fbPE_H_VF2.TempoFuncionando": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V1.Teste": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L1.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L1.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L1.Lavagem_Circuito01.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L1.Lavagem_Circuito01.Config.LavAguaUsada": 3,
@@ -34047,12 +36161,24 @@
                 "PLC1.Circuito_L1.fbBomba_L1.Interlock": 3,
                 "PLC1.Circuito_L1.fbBomba_L1.TempoFuncionando": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L10.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L10.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L10.Lavagem_Circuito10.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L10.Lavagem_Circuito10.Config.LavAguaUsada": 3,
@@ -34067,12 +36193,24 @@
                 "PLC1.Circuito_L10.fbBomba_L10.Interlock": 3,
                 "PLC1.Circuito_L10.fbBomba_L10.TempoFuncionando": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L11.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L11.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L11.Lavagem_Circuito11.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L11.Lavagem_Circuito11.Config.LavAguaUsada": 3,
@@ -34087,12 +36225,24 @@
                 "PLC1.Circuito_L11.fbBomba_L11.Interlock": 3,
                 "PLC1.Circuito_L11.fbBomba_L11.TempoFuncionando": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L12.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L12.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L12.Lavagem_Circuito12.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L12.Lavagem_Circuito12.Config.LavAguaUsada": 3,
@@ -34107,12 +36257,23 @@
                 "PLC1.Circuito_L12.fbBomba_L12.Interlock": 3,
                 "PLC1.Circuito_L12.fbBomba_L12.TempoFuncionando": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L2.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L2.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L2.Lavagem_Circuito02.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L2.Lavagem_Circuito02.Config.LavAguaUsada": 3,
@@ -34128,12 +36289,24 @@
                 "PLC1.Circuito_L2.fbBomba_L2.Interlock": 3,
                 "PLC1.Circuito_L2.fbBomba_L2.TempoFuncionando": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L3.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L3.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L3.Lavagem_Circuito03.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L3.Lavagem_Circuito03.Config.LavAguaUsada": 3,
@@ -34154,12 +36327,24 @@
                 "PLC1.Circuito_L3.fbBomba_L3.TempoFuncionando": 3,
                 "PLC1.Circuito_L4.Auxconsumo": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L4.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L4.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L4.Lavagem_Circuito04.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L4.Lavagem_Circuito04.Config.LavAguaUsada": 3,
@@ -34177,12 +36362,24 @@
                 "PLC1.Circuito_L4.fbBomba_L4.Interlock": 3,
                 "PLC1.Circuito_L4.fbBomba_L4.TempoFuncionando": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L5.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L5.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L5.Lavagem_Circuito05.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L5.Lavagem_Circuito05.Config.LavAguaUsada": 3,
@@ -34197,12 +36394,24 @@
                 "PLC1.Circuito_L5.fbBomba_L5.Interlock": 3,
                 "PLC1.Circuito_L5.fbBomba_L5.TempoFuncionando": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V2.qntAcionamentos": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V3.TemposAcionamento": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L6.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L6.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L6.Lavagem_Circuito06.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L6.Lavagem_Circuito06.Config.LavAguaUsada": 3,
@@ -34217,12 +36426,24 @@
                 "PLC1.Circuito_L6.fbBomba_L6.Interlock": 3,
                 "PLC1.Circuito_L6.fbBomba_L6.TempoFuncionando": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L7.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L7.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L7.Lavagem_Circuito07.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L7.Lavagem_Circuito07.Config.LavAguaUsada": 3,
@@ -34237,12 +36458,24 @@
                 "PLC1.Circuito_L7.fbBomba_L7.Interlock": 3,
                 "PLC1.Circuito_L7.fbBomba_L7.TempoFuncionando": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L8.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L8.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L8.Lavagem_Circuito08.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L8.Lavagem_Circuito08.Config.LavAguaUsada": 3,
@@ -34257,12 +36490,24 @@
                 "PLC1.Circuito_L8.fbBomba_L8.Interlock": 3,
                 "PLC1.Circuito_L8.fbBomba_L8.TempoFuncionando": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V1.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V1.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V1.qntAcionamentos": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V2.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V2.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V2.qntAcionamentos": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V3.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V3.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V3.qntAcionamentos": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V4.TemposAcionamento.9": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes.0": 3,
+                "PLC1.Circuito_L9.ControlValv_ioLink_V4.UltimasPosicoes.1": 3,
                 "PLC1.Circuito_L9.ControlValv_ioLink_V4.qntAcionamentos": 3,
                 "PLC1.Circuito_L9.Lavagem_Circuito9.Config.LavAguaLimpa": 3,
                 "PLC1.Circuito_L9.Lavagem_Circuito9.Config.LavAguaUsada": 3,
@@ -34388,6 +36633,7 @@
                 "PLC1.Dosificador_Polvo_1.Calibracion_Po_calc_P1.PromMuestra": 3,
                 "PLC1.Dosificador_Polvo_1.PolvoAsociado": 3,
                 "PLC1.Dosificador_Polvo_1.TR_P1_WT1_rValue_REAL": 3,
+                "PLC1.Dosificador_Polvo_1.UltimaCalibracao": 3,
                 "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.0": 3,
                 "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.1": 3,
                 "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.Pesada.2": 3,
@@ -34397,6 +36643,7 @@
                 "PLC1.Dosificador_Polvo_2.Calibracion_Po_calc_P2.PromMuestra": 3,
                 "PLC1.Dosificador_Polvo_2.PolvoAsociado": 3,
                 "PLC1.Dosificador_Polvo_2.TR_P2_WT1_rValue_REAL": 3,
+                "PLC1.Dosificador_Polvo_2.UltimaCalibracao": 3,
                 "PLC1.Entradas.CA1_WT1_rValue_REAL": 3,
                 "PLC1.Entradas.CA2_WT1_rValue_REAL": 3,
                 "PLC1.Entradas.CA3_WT1_rValue_REAL": 3,
@@ -35444,9 +37691,22 @@
                 "PLC1.Tratadora.TR_S_V1.Eventos_Parciales": 3,
                 "PLC1.Tratadora.TR_S_V1.Reset_Eventos": 3,
                 "PLC1.Tratadora.TR_S_V1.TempoAbertura": 3,
+                "PLC1.Tratadora.TR_S_VE1.Acionamentos": 3,
                 "PLC1.Tratadora.TR_S_VE1.Cmd_Man": 3,
                 "PLC1.Tratadora.TR_S_VE1.Estado": 3,
+                "PLC1.Tratadora.TR_S_VE1.Reset_Horas": 3,
+                "PLC1.Tratadora.TR_S_VE1.TempoFuncionando": 3,
+                "PLC1.Tratadora.fbAspersor.Acionamentos": 3,
+                "PLC1.Tratadora.fbAspersor.ResetContadores": 3,
+                "PLC1.Tratadora.fbAspersor.TempoFuncionando": 3,
+                "PLC1.Tratadora.fbHomogenizador.Acionamentos": 3,
+                "PLC1.Tratadora.fbHomogenizador.ResetContadores": 3,
+                "PLC1.Tratadora.fbHomogenizador.TempoFuncionando": 3,
+                "PLC1.Valvulas_Lavado.ControlValv_ioLink_V5.UltimasPosicoes.0": 3,
+                "PLC1.Valvulas_Lavado.ControlValv_ioLink_V5.UltimasPosicoes.1": 3,
                 "PLC1.Valvulas_Lavado.ControlValv_ioLink_V5.qntAcionamentos": 3,
+                "PLC1.Valvulas_Lavado.ControlValv_ioLink_V6.UltimasPosicoes.0": 3,
+                "PLC1.Valvulas_Lavado.ControlValv_ioLink_V6.UltimasPosicoes.1": 3,
                 "PLC1.Valvulas_Lavado.ControlValv_ioLink_V6.qntAcionamentos": 3,
                 "PLC1.ioLink.b3St1_CA1_L2_V1": 3,
                 "PLC_HUGO.Application Name": 3,
@@ -35666,6 +37926,7 @@
         "/Beckhoff.TwinCAT.HMI.Entertainment": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Entertainment.1.0.1\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.Functions": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Functions.12.762.46\\runtimes\\native1.12-tchmi",
         "/Beckhoff.TwinCAT.HMI.ScopeControl": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.ScopeControl.12.762.46\\runtimes\\native1.12-tchmi",
+        "/JB.TcHmiDynamicPopup": "..\\..\\Packages\\JB.TcHmiDynamicPopup.1.0.0\\runtimes\\native1.12-tchmi",
         "/bin": "..\\..\\HMI TRATADORA B300\\bin\\",
         "/bin/framework": "..\\..\\HMI TRATADORA B300\\bin\\framework",
         "/framework": "..\\..\\Packages\\Beckhoff.TwinCAT.HMI.Framework.12.762.46\\runtimes\\native1.12-tchmi"

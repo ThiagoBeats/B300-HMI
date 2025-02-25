@@ -1,14 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "definitions": {
-    "Teste": {
-      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
-      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
-      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
-      "frameworkUserControlConfig": "UserControls\\Teste.usercontrol.json",
-      "id": "tchmi:project#/definitions/Teste",
-      "type": "object"
-    },
     "AcionamentosLinhas": {
       "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
       "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
@@ -44,6 +36,22 @@
       "minItems": 12,
       "maxItems": 12,
       "title": "Array_12"
+    },
+    "TratadoraPerifericos_-_Copy": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\Tratadora.usercontrol.json",
+      "type": "object",
+      "id": "tchmi:project#/definitions/TratadoraPerifericos_-_Copy"
+    },
+    "ConfigLinhas": {
+      "frameworkControlNamespace": "TcHmi.Controls.Beckhoff",
+      "frameworkControlType": "TcHmi.Controls.System.TcHmiUserControl",
+      "frameworkInstanceOf": "TcHmi.Controls.System.TcHmiControl",
+      "frameworkUserControlConfig": "UserControls\\ConfigLinhas.usercontrol.json",
+      "id": "tchmi:project#/definitions/ConfigLinhas",
+      "type": "object"
     }
   }
 }

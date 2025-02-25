@@ -2154,7 +2154,17 @@
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
-  "color": "rgba(0, 170, 10, 1)"
+  "angle": 90.0,
+  "stopPoints": [
+    {
+      "color": "rgba(1, 69, 5, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(0, 170, 10, 1)",
+      "stop": "100%"
+    }
+  ]
 }
 </script>
 
@@ -2195,11 +2205,34 @@
   }
 ]
 </script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
+</script>
 </div>
 <div id="btEsvaziarBalanca_1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="65" data-tchmi-left-unit="%" data-tchmi-text="%l%ESVAZIAR_CAIXA%/l%" data-tchmi-top="70.0" data-tchmi-top-unit="%" data-tchmi-width="13" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="%f%!%s%PLC1.Entradas.TR_S_LLS%/s%%/f%">
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
-  "color": "rgba(0, 170, 10, 1)"
+  "angle": 90.0,
+  "stopPoints": [
+    {
+      "color": "rgba(0, 76, 4, 1)",
+      "stop": "0%"
+    },
+    {
+      "color": "rgba(0, 170, 10, 1)",
+      "stop": "100%"
+    }
+  ]
 }
 </script>
 
@@ -2228,6 +2261,19 @@
     ]
   }
 ]
+</script>
+
+<script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
+{
+  "topLeft": 5.0,
+  "topRight": 5.0,
+  "bottomLeft": 5.0,
+  "bottomRight": 5.0,
+  "topLeftUnit": "px",
+  "topRightUnit": "px",
+  "bottomLeftUnit": "px",
+  "bottomRightUnit": "px"
+}
 </script>
 </div>
 </div>

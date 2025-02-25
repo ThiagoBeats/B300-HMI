@@ -370,7 +370,7 @@
 ]
 </script>
 </div>
-<div id="Button_CALIBRAR_MAP1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="12" data-tchmi-height-unit="%" data-tchmi-left="30" data-tchmi-left-unit="%" data-tchmi-text="%l%CALIBRAR_POLVO%/l%" data-tchmi-top="80" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120" data-tchmi-zindex="4" data-tchmi-visibility="Collapsed">
+<div id="Button_CALIBRAR_MAP1" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="12" data-tchmi-height-unit="%" data-tchmi-left="30" data-tchmi-left-unit="%" data-tchmi-text="%l%CALIBRAR_POLVO%/l%" data-tchmi-top="80" data-tchmi-top-unit="%" data-tchmi-width="25" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-bottom-unit="%" data-tchmi-right-unit="%" data-tchmi-text-font-size-unit="%" data-tchmi-text-font-size="120" data-tchmi-zindex="4" data-tchmi-visibility="Visible" data-tchmi-is-enabled="%f%%s%PLC1.Entradas.TR_P1_ZO%/s% && %s%PLC1.HMI.bModo_Auto%/s%%/f%">
 <script data-tchmi-target-attribute="data-tchmi-border-radius" type="application/json">
 {
   "topLeft": 10.0,
@@ -490,7 +490,7 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
@@ -511,7 +511,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.HMI.bModo_Auto%/s%"
                 },
                 "compare2": {
@@ -562,7 +562,7 @@
     "actions": [
       {
         "objectType": "Condition",
-        "active": true,
+        "active": false,
         "parts": [
           {
             "if": [
@@ -583,7 +583,7 @@
               {
                 "compare1": {
                   "objectType": "Symbol",
-                  "valueType": "tchmi:general#/definitions/String",
+                  "valueType": "tchmi:general#/definitions/BOOL",
                   "symbolExpression": "%s%PLC1.HMI.bModo_Auto%/s%"
                 },
                 "compare2": {

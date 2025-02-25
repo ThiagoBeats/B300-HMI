@@ -125,7 +125,7 @@
       "url": "UserControls/AcionamentosLinhas.usercontrol"
     },
     {
-      "url": "UserControls/Teste.usercontrol"
+      "url": "UserControls/Tratadora.usercontrol"
     }
   ],
   "content": [
@@ -516,6 +516,13 @@
     },
     {
       "url": "PANTALLAS/RECETAS/RECETA_ACTIVAV02.content",
+      "preload": false,
+      "keepAlive": false,
+      "loadSync": false,
+      "preloadBindings": false
+    },
+    {
+      "url": "PANTALLAS/DADOS_CONSUMO/Grafana.content",
       "preload": false,
       "keepAlive": false,
       "loadSync": false,

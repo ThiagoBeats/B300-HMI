@@ -2150,7 +2150,7 @@
 ]
 </script>
 </div>
-<div id="btEsvaziarBalanca" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="80.0" data-tchmi-left-unit="%" data-tchmi-text="%l%forcar_descarga%/l%" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="13" data-tchmi-width-unit="%" data-tchmi-word-wrap="true">
+<div id="btEsvaziarBalanca" data-tchmi-type="TcHmi.Controls.Beckhoff.TcHmiButton" data-tchmi-height="9" data-tchmi-height-unit="%" data-tchmi-left="80.0" data-tchmi-left-unit="%" data-tchmi-text="%l%forcar_descarga%/l%" data-tchmi-top="70" data-tchmi-top-unit="%" data-tchmi-width="13" data-tchmi-width-unit="%" data-tchmi-word-wrap="true" data-tchmi-is-enabled="%s%PLC1.HMI.bModo_Auto%/s%">
 
 <script data-tchmi-target-attribute="data-tchmi-background-color" type="application/json">
 {
@@ -2173,6 +2173,17 @@
         "objectType": "WriteToSymbol",
         "active": true,
         "symbolExpression": "%s%PLC1.Balanza_Semilla.FinCarga%/s%",
+        "value": {
+          "objectType": "StaticValue",
+          "valueType": "tchmi:general#/definitions/BOOL",
+          "value": true
+        },
+        "asyncWait": true
+      },
+      {
+        "objectType": "WriteToSymbol",
+        "active": true,
+        "symbolExpression": "%s%PLC1.HMI.bDescargarBalanza%/s%",
         "value": {
           "objectType": "StaticValue",
           "valueType": "tchmi:general#/definitions/BOOL",
